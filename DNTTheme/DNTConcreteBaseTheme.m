@@ -1,22 +1,22 @@
 //
-//  DNTBaseTheme.m
+//  DNTConcreteBaseTheme.m
 //  DNTThemeBrowser
 //
 //  Created by Daniel Thorpe on 26/01/2013.
 //  Copyright (c) 2013 Daniel Thorpe. All rights reserved.
 //
 
-#import "DNTBaseTheme.h"
+#import "DNTConcreteBaseTheme.h"
 #import "DNTThemeCommon.h"
 
-@interface DNTBaseTheme ( /* Private */ )
+@interface DNTConcreteBaseTheme ( /* Private */ )
 
 @property (nonatomic, readwrite) NSCache *cache;
 
 @end
 
 
-@implementation DNTBaseTheme
+@implementation DNTConcreteBaseTheme
 
 - (id)init {
     self = [super init];

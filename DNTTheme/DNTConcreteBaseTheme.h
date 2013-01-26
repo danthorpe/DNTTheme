@@ -1,5 +1,5 @@
 //
-//  DNTBaseTheme.h
+//  DNTConcreteBaseTheme.h
 //  DNTThemeBrowser
 //
 //  Created by Daniel Thorpe on 26/01/2013.
@@ -9,7 +9,7 @@
 #import "DNTThemeCommon.h"
 #import "DNTBaseThemeInterface.h"
 
-@interface DNTBaseTheme : NSObject <DNTBaseThemeInterface>
+@interface DNTConcreteBaseTheme : NSObject <DNTBaseThemeInterface>
 
 @property (nonatomic, readonly) NSCache *cache;
 

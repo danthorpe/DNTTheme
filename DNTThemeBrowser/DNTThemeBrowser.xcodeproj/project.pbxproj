@@ -21,10 +21,10 @@
 		65D0D15F16B3458000C32336 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D14016B3458000C32336 /* Foundation.framework */; };
 		65D0D16716B3458100C32336 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D0D16516B3458000C32336 /* InfoPlist.strings */; };
 		65D0D16A16B3458100C32336 /* DNTThemeBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D0D16916B3458100C32336 /* DNTThemeBrowserTests.m */; };
-		65D0D17B16B346B800C32336 /* DNTCommonTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D0D17A16B346B800C32336 /* DNTCommonTheme.m */; };
-		65E588B216B34F9A00085A5E /* DNTBodyTextTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588B116B34F9A00085A5E /* DNTBodyTextTheme.m */; };
-		65E588B616B350C300085A5E /* DNTTextTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588B516B350C300085A5E /* DNTTextTheme.m */; };
-		65E588BB16B35B4100085A5E /* DNTBaseTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588BA16B35B4100085A5E /* DNTBaseTheme.m */; };
+		65D0D17B16B346B800C32336 /* DNTConcreteCommonTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D0D17A16B346B800C32336 /* DNTConcreteCommonTheme.m */; };
+		65E588B216B34F9A00085A5E /* DNTConcreteBodyTextTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588B116B34F9A00085A5E /* DNTConcreteBodyTextTheme.m */; };
+		65E588B616B350C300085A5E /* DNTConcreteTextTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588B516B350C300085A5E /* DNTConcreteTextTheme.m */; };
+		65E588BB16B35B4100085A5E /* DNTConcreteBaseTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588BA16B35B4100085A5E /* DNTConcreteBaseTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,21 +57,21 @@
 		65D0D16616B3458000C32336 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65D0D16816B3458100C32336 /* DNTThemeBrowserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNTThemeBrowserTests.h; sourceTree = "<group>"; };
 		65D0D16916B3458100C32336 /* DNTThemeBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTThemeBrowserTests.m; sourceTree = "<group>"; };
-		65D0D17916B346B800C32336 /* DNTCommonTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTCommonTheme.h; path = ../DNTTheme/DNTCommonTheme.h; sourceTree = "<group>"; };
-		65D0D17A16B346B800C32336 /* DNTCommonTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTCommonTheme.m; path = ../DNTTheme/DNTCommonTheme.m; sourceTree = "<group>"; };
+		65D0D17916B346B800C32336 /* DNTConcreteCommonTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteCommonTheme.h; path = ../DNTTheme/DNTConcreteCommonTheme.h; sourceTree = "<group>"; };
+		65D0D17A16B346B800C32336 /* DNTConcreteCommonTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteCommonTheme.m; path = ../DNTTheme/DNTConcreteCommonTheme.m; sourceTree = "<group>"; };
 		65D0D17C16B3474F00C32336 /* DNTPlatformThemeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTPlatformThemeInterface.h; path = ../DNTTheme/DNTPlatformThemeInterface.h; sourceTree = "<group>"; };
 		65D0D17D16B347AD00C32336 /* DNTTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTTheme.h; path = ../DNTTheme/DNTTheme.h; sourceTree = "<group>"; };
 		65E588AC16B34B0200085A5E /* DNTComponentThemeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTComponentThemeInterface.h; path = ../DNTTheme/DNTComponentThemeInterface.h; sourceTree = "<group>"; };
 		65E588AE16B34DA000085A5E /* DNTColorStyleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTColorStyleInterface.h; path = ../DNTTheme/DNTColorStyleInterface.h; sourceTree = "<group>"; };
 		65E588AF16B34DBE00085A5E /* DNTTextStyleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTTextStyleInterface.h; path = ../DNTTheme/DNTTextStyleInterface.h; sourceTree = "<group>"; };
-		65E588B016B34F9A00085A5E /* DNTBodyTextTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTBodyTextTheme.h; path = ../DNTTheme/DNTBodyTextTheme.h; sourceTree = "<group>"; };
-		65E588B116B34F9A00085A5E /* DNTBodyTextTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTBodyTextTheme.m; path = ../DNTTheme/DNTBodyTextTheme.m; sourceTree = "<group>"; };
-		65E588B416B350C300085A5E /* DNTTextTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTTextTheme.h; path = ../DNTTheme/DNTTextTheme.h; sourceTree = "<group>"; };
-		65E588B516B350C300085A5E /* DNTTextTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTTextTheme.m; path = ../DNTTheme/DNTTextTheme.m; sourceTree = "<group>"; };
+		65E588B016B34F9A00085A5E /* DNTConcreteBodyTextTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteBodyTextTheme.h; path = ../DNTTheme/DNTConcreteBodyTextTheme.h; sourceTree = "<group>"; };
+		65E588B116B34F9A00085A5E /* DNTConcreteBodyTextTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteBodyTextTheme.m; path = ../DNTTheme/DNTConcreteBodyTextTheme.m; sourceTree = "<group>"; };
+		65E588B416B350C300085A5E /* DNTConcreteTextTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteTextTheme.h; path = ../DNTTheme/DNTConcreteTextTheme.h; sourceTree = "<group>"; };
+		65E588B516B350C300085A5E /* DNTConcreteTextTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteTextTheme.m; path = ../DNTTheme/DNTConcreteTextTheme.m; sourceTree = "<group>"; };
 		65E588B716B354A600085A5E /* DNTButtonStyleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTButtonStyleInterface.h; path = ../DNTTheme/DNTButtonStyleInterface.h; sourceTree = "<group>"; };
 		65E588B816B35A3000085A5E /* DNTThemeCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTThemeCommon.h; path = ../DNTTheme/DNTThemeCommon.h; sourceTree = "<group>"; };
-		65E588B916B35B4100085A5E /* DNTBaseTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTBaseTheme.h; path = ../DNTTheme/DNTBaseTheme.h; sourceTree = "<group>"; };
-		65E588BA16B35B4100085A5E /* DNTBaseTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTBaseTheme.m; path = ../DNTTheme/DNTBaseTheme.m; sourceTree = "<group>"; };
+		65E588B916B35B4100085A5E /* DNTConcreteBaseTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteBaseTheme.h; path = ../DNTTheme/DNTConcreteBaseTheme.h; sourceTree = "<group>"; };
+		65E588BA16B35B4100085A5E /* DNTConcreteBaseTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteBaseTheme.m; path = ../DNTTheme/DNTConcreteBaseTheme.m; sourceTree = "<group>"; };
 		65E588BC16B35C0100085A5E /* DNTBaseThemeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTBaseThemeInterface.h; path = ../DNTTheme/DNTBaseThemeInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,14 +200,14 @@
 		65E588B316B34FB500085A5E /* Themes */ = {
 			isa = PBXGroup;
 			children = (
-				65E588B916B35B4100085A5E /* DNTBaseTheme.h */,
-				65E588BA16B35B4100085A5E /* DNTBaseTheme.m */,
-				65D0D17916B346B800C32336 /* DNTCommonTheme.h */,
-				65D0D17A16B346B800C32336 /* DNTCommonTheme.m */,
-				65E588B016B34F9A00085A5E /* DNTBodyTextTheme.h */,
-				65E588B116B34F9A00085A5E /* DNTBodyTextTheme.m */,
-				65E588B416B350C300085A5E /* DNTTextTheme.h */,
-				65E588B516B350C300085A5E /* DNTTextTheme.m */,
+				65E588B916B35B4100085A5E /* DNTConcreteBaseTheme.h */,
+				65E588BA16B35B4100085A5E /* DNTConcreteBaseTheme.m */,
+				65D0D17916B346B800C32336 /* DNTConcreteCommonTheme.h */,
+				65D0D17A16B346B800C32336 /* DNTConcreteCommonTheme.m */,
+				65E588B016B34F9A00085A5E /* DNTConcreteBodyTextTheme.h */,
+				65E588B116B34F9A00085A5E /* DNTConcreteBodyTextTheme.m */,
+				65E588B416B350C300085A5E /* DNTConcreteTextTheme.h */,
+				65E588B516B350C300085A5E /* DNTConcreteTextTheme.m */,
 			);
 			name = Themes;
 			sourceTree = "<group>";
@@ -324,10 +324,10 @@
 			files = (
 				65D0D14B16B3458000C32336 /* main.m in Sources */,
 				65D0D14F16B3458000C32336 /* DNTAppDelegate.m in Sources */,
-				65D0D17B16B346B800C32336 /* DNTCommonTheme.m in Sources */,
-				65E588B216B34F9A00085A5E /* DNTBodyTextTheme.m in Sources */,
-				65E588B616B350C300085A5E /* DNTTextTheme.m in Sources */,
-				65E588BB16B35B4100085A5E /* DNTBaseTheme.m in Sources */,
+				65D0D17B16B346B800C32336 /* DNTConcreteCommonTheme.m in Sources */,
+				65E588B216B34F9A00085A5E /* DNTConcreteBodyTextTheme.m in Sources */,
+				65E588B616B350C300085A5E /* DNTConcreteTextTheme.m in Sources */,
+				65E588BB16B35B4100085A5E /* DNTConcreteBaseTheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

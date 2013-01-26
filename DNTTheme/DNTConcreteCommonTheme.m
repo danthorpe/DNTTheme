@@ -1,21 +1,21 @@
 //
-//  DNTCommonTheme.m
+//  DNTConcreteCommonTheme.m
 //  DNTThemeBrowser
 //
 //  Created by Daniel Thorpe on 25/01/2013.
 //  Copyright (c) 2013 Daniel Thorpe. All rights reserved.
 //
 
-#import "DNTCommonTheme.h"
+#import "DNTConcreteCommonTheme.h"
 
 // Concrete classes
-#import "DNTBodyTextTheme.h"
+#import "DNTConcreteBodyTextTheme.h"
 
-@interface DNTCommonTheme ( /* Private */ )
+@interface DNTConcreteCommonTheme ( /* Private */ )
 
 @end
 
-@implementation DNTCommonTheme
+@implementation DNTConcreteCommonTheme
 
 #pragma mark - Theme Classes
 
@@ -28,7 +28,7 @@
         case DNTTextStyleFooterKey:
         case DNTTextStyleHeaderKey:
         case DNTTextStyleBodyKey:
-            class = [DNTBodyTextTheme class];
+            class = [DNTConcreteBodyTextTheme class];
             break;
 
             // Buttons            
@@ -78,7 +78,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         // Default implementation only has a single theme.
-        sharedTheme = [[DNTCommonTheme alloc] init];
+        sharedTheme = [[DNTConcreteCommonTheme alloc] init];
     });
     return sharedTheme;
 }

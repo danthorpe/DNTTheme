@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Daniel Thorpe. All rights reserved.
 //
 
-#import "DNTTextTheme.h"
+#import "DNTConcreteTextTheme.h"
 
-@implementation DNTTextTheme
+@implementation DNTConcreteTextTheme
 
 #pragma mark - DNTColorThemeInterface
 

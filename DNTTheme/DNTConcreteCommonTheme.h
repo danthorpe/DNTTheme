@@ -1,5 +1,5 @@
 //
-//  DNTCommonTheme.h
+//  DNTConcreteCommonTheme.h
 //  DNTThemeBrowser
 //
 //  Created by Daniel Thorpe on 25/01/2013.
@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-#import "DNTBaseTheme.h"
+#import "DNTConcreteBaseTheme.h"
 #import "DNTPlatformThemeInterface.h"
 
 @protocol DNTColorStyleInterface;
 @protocol DNTTextStyleInterface;
 @protocol DNTComponentThemeInterface;
 
-@interface DNTCommonTheme : DNTBaseTheme <DNTPlatformThemeInterface>
+@interface DNTConcreteCommonTheme : DNTConcreteBaseTheme <DNTPlatformThemeInterface>
 @end
 
 /// @abstract Class method based functionality.

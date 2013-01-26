@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Daniel Thorpe. All rights reserved.
 //
 
-#import "DNTTextTheme.h"
+#import "DNTConcreteTextTheme.h"
 
-@interface DNTBodyTextTheme : DNTTextTheme
+@interface DNTConcreteBodyTextTheme : DNTConcreteTextTheme
 
 @end
