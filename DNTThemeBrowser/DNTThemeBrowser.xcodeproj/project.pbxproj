@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65D0D13F16B3458000C32336 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D13E16B3458000C32336 /* UIKit.framework */; };
+		65D0D14116B3458000C32336 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D14016B3458000C32336 /* Foundation.framework */; };
+		65D0D14316B3458000C32336 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D14216B3458000C32336 /* CoreGraphics.framework */; };
+		65D0D14916B3458000C32336 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D0D14716B3458000C32336 /* InfoPlist.strings */; };
+		65D0D14B16B3458000C32336 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D0D14A16B3458000C32336 /* main.m */; };
+		65D0D14F16B3458000C32336 /* DNTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D0D14E16B3458000C32336 /* DNTAppDelegate.m */; };
+		65D0D15116B3458000C32336 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D0D15016B3458000C32336 /* Default.png */; };
+		65D0D15316B3458000C32336 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D0D15216B3458000C32336 /* Default@2x.png */; };
+		65D0D15516B3458000C32336 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D0D15416B3458000C32336 /* Default-568h@2x.png */; };
+		65D0D15D16B3458000C32336 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D15C16B3458000C32336 /* SenTestingKit.framework */; };
+		65D0D15E16B3458000C32336 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D13E16B3458000C32336 /* UIKit.framework */; };
+		65D0D15F16B3458000C32336 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D14016B3458000C32336 /* Foundation.framework */; };
+		65D0D16716B3458100C32336 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D0D16516B3458000C32336 /* InfoPlist.strings */; };
+		65D0D16A16B3458100C32336 /* DNTThemeBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D0D16916B3458100C32336 /* DNTThemeBrowserTests.m */; };
+		65D0D17B16B346B800C32336 /* DNTCommonTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D0D17A16B346B800C32336 /* DNTCommonTheme.m */; };
+		65E588B216B34F9A00085A5E /* DNTBodyTextTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588B116B34F9A00085A5E /* DNTBodyTextTheme.m */; };
+		65E588B616B350C300085A5E /* DNTTextTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588B516B350C300085A5E /* DNTTextTheme.m */; };
+		65E588BB16B35B4100085A5E /* DNTBaseTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588BA16B35B4100085A5E /* DNTBaseTheme.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65D0D16016B3458000C32336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65D0D13116B3458000C32336 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65D0D13916B3458000C32336;
+			remoteInfo = DNTThemeBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65D0D13A16B3458000C32336 /* DNTThemeBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNTThemeBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D0D13E16B3458000C32336 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65D0D14016B3458000C32336 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65D0D14216B3458000C32336 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65D0D14616B3458000C32336 /* DNTThemeBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DNTThemeBrowser-Info.plist"; sourceTree = "<group>"; };
+		65D0D14816B3458000C32336 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65D0D14A16B3458000C32336 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65D0D14C16B3458000C32336 /* DNTThemeBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DNTThemeBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		65D0D14D16B3458000C32336 /* DNTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNTAppDelegate.h; sourceTree = "<group>"; };
+		65D0D14E16B3458000C32336 /* DNTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTAppDelegate.m; sourceTree = "<group>"; };
+		65D0D15016B3458000C32336 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		65D0D15216B3458000C32336 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		65D0D15416B3458000C32336 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		65D0D15B16B3458000C32336 /* DNTThemeBrowserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNTThemeBrowserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D0D15C16B3458000C32336 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		65D0D16416B3458000C32336 /* DNTThemeBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DNTThemeBrowserTests-Info.plist"; sourceTree = "<group>"; };
+		65D0D16616B3458000C32336 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65D0D16816B3458100C32336 /* DNTThemeBrowserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNTThemeBrowserTests.h; sourceTree = "<group>"; };
+		65D0D16916B3458100C32336 /* DNTThemeBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTThemeBrowserTests.m; sourceTree = "<group>"; };
+		65D0D17916B346B800C32336 /* DNTCommonTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTCommonTheme.h; path = ../DNTTheme/DNTCommonTheme.h; sourceTree = "<group>"; };
+		65D0D17A16B346B800C32336 /* DNTCommonTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTCommonTheme.m; path = ../DNTTheme/DNTCommonTheme.m; sourceTree = "<group>"; };
+		65D0D17C16B3474F00C32336 /* DNTPlatformThemeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTPlatformThemeInterface.h; path = ../DNTTheme/DNTPlatformThemeInterface.h; sourceTree = "<group>"; };
+		65D0D17D16B347AD00C32336 /* DNTTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTTheme.h; path = ../DNTTheme/DNTTheme.h; sourceTree = "<group>"; };
+		65E588AC16B34B0200085A5E /* DNTComponentThemeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTComponentThemeInterface.h; path = ../DNTTheme/DNTComponentThemeInterface.h; sourceTree = "<group>"; };
+		65E588AE16B34DA000085A5E /* DNTColorStyleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTColorStyleInterface.h; path = ../DNTTheme/DNTColorStyleInterface.h; sourceTree = "<group>"; };
+		65E588AF16B34DBE00085A5E /* DNTTextStyleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTTextStyleInterface.h; path = ../DNTTheme/DNTTextStyleInterface.h; sourceTree = "<group>"; };
+		65E588B016B34F9A00085A5E /* DNTBodyTextTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTBodyTextTheme.h; path = ../DNTTheme/DNTBodyTextTheme.h; sourceTree = "<group>"; };
+		65E588B116B34F9A00085A5E /* DNTBodyTextTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTBodyTextTheme.m; path = ../DNTTheme/DNTBodyTextTheme.m; sourceTree = "<group>"; };
+		65E588B416B350C300085A5E /* DNTTextTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTTextTheme.h; path = ../DNTTheme/DNTTextTheme.h; sourceTree = "<group>"; };
+		65E588B516B350C300085A5E /* DNTTextTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTTextTheme.m; path = ../DNTTheme/DNTTextTheme.m; sourceTree = "<group>"; };
+		65E588B716B354A600085A5E /* DNTButtonStyleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTButtonStyleInterface.h; path = ../DNTTheme/DNTButtonStyleInterface.h; sourceTree = "<group>"; };
+		65E588B816B35A3000085A5E /* DNTThemeCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTThemeCommon.h; path = ../DNTTheme/DNTThemeCommon.h; sourceTree = "<group>"; };
+		65E588B916B35B4100085A5E /* DNTBaseTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTBaseTheme.h; path = ../DNTTheme/DNTBaseTheme.h; sourceTree = "<group>"; };
+		65E588BA16B35B4100085A5E /* DNTBaseTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTBaseTheme.m; path = ../DNTTheme/DNTBaseTheme.m; sourceTree = "<group>"; };
+		65E588BC16B35C0100085A5E /* DNTBaseThemeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTBaseThemeInterface.h; path = ../DNTTheme/DNTBaseThemeInterface.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65D0D13716B3458000C32336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D0D13F16B3458000C32336 /* UIKit.framework in Frameworks */,
+				65D0D14116B3458000C32336 /* Foundation.framework in Frameworks */,
+				65D0D14316B3458000C32336 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D0D15716B3458000C32336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D0D15D16B3458000C32336 /* SenTestingKit.framework in Frameworks */,
+				65D0D15E16B3458000C32336 /* UIKit.framework in Frameworks */,
+				65D0D15F16B3458000C32336 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65D0D12F16B3458000C32336 = {
+			isa = PBXGroup;
+			children = (
+				65D0D17716B3461300C32336 /* DNTTheme */,
+				65D0D14416B3458000C32336 /* DNTThemeBrowser */,
+				65D0D16216B3458000C32336 /* DNTThemeBrowserTests */,
+				65D0D13D16B3458000C32336 /* Frameworks */,
+				65D0D13B16B3458000C32336 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65D0D13B16B3458000C32336 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65D0D13A16B3458000C32336 /* DNTThemeBrowser.app */,
+				65D0D15B16B3458000C32336 /* DNTThemeBrowserTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65D0D13D16B3458000C32336 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65D0D13E16B3458000C32336 /* UIKit.framework */,
+				65D0D14016B3458000C32336 /* Foundation.framework */,
+				65D0D14216B3458000C32336 /* CoreGraphics.framework */,
+				65D0D15C16B3458000C32336 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65D0D14416B3458000C32336 /* DNTThemeBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				65D0D14D16B3458000C32336 /* DNTAppDelegate.h */,
+				65D0D14E16B3458000C32336 /* DNTAppDelegate.m */,
+				65D0D14516B3458000C32336 /* Supporting Files */,
+			);
+			path = DNTThemeBrowser;
+			sourceTree = "<group>";
+		};
+		65D0D14516B3458000C32336 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65D0D14616B3458000C32336 /* DNTThemeBrowser-Info.plist */,
+				65D0D14716B3458000C32336 /* InfoPlist.strings */,
+				65D0D14A16B3458000C32336 /* main.m */,
+				65D0D14C16B3458000C32336 /* DNTThemeBrowser-Prefix.pch */,
+				65D0D15016B3458000C32336 /* Default.png */,
+				65D0D15216B3458000C32336 /* Default@2x.png */,
+				65D0D15416B3458000C32336 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65D0D16216B3458000C32336 /* DNTThemeBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				65D0D16816B3458100C32336 /* DNTThemeBrowserTests.h */,
+				65D0D16916B3458100C32336 /* DNTThemeBrowserTests.m */,
+				65D0D16316B3458000C32336 /* Supporting Files */,
+			);
+			path = DNTThemeBrowserTests;
+			sourceTree = "<group>";
+		};
+		65D0D16316B3458000C32336 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65D0D16416B3458000C32336 /* DNTThemeBrowserTests-Info.plist */,
+				65D0D16516B3458000C32336 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65D0D17716B3461300C32336 /* DNTTheme */ = {
+			isa = PBXGroup;
+			children = (
+				65D0D17D16B347AD00C32336 /* DNTTheme.h */,
+				65E588B816B35A3000085A5E /* DNTThemeCommon.h */,
+				65E588AD16B34B1900085A5E /* Protocols */,
+				65E588B316B34FB500085A5E /* Themes */,
+			);
+			name = DNTTheme;
+			sourceTree = "<group>";
+		};
+		65E588AD16B34B1900085A5E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				65E588BC16B35C0100085A5E /* DNTBaseThemeInterface.h */,
+				65D0D17C16B3474F00C32336 /* DNTPlatformThemeInterface.h */,
+				65E588AC16B34B0200085A5E /* DNTComponentThemeInterface.h */,
+				65E588AE16B34DA000085A5E /* DNTColorStyleInterface.h */,
+				65E588AF16B34DBE00085A5E /* DNTTextStyleInterface.h */,
+				65E588B716B354A600085A5E /* DNTButtonStyleInterface.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		65E588B316B34FB500085A5E /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				65E588B916B35B4100085A5E /* DNTBaseTheme.h */,
+				65E588BA16B35B4100085A5E /* DNTBaseTheme.m */,
+				65D0D17916B346B800C32336 /* DNTCommonTheme.h */,
+				65D0D17A16B346B800C32336 /* DNTCommonTheme.m */,
+				65E588B016B34F9A00085A5E /* DNTBodyTextTheme.h */,
+				65E588B116B34F9A00085A5E /* DNTBodyTextTheme.m */,
+				65E588B416B350C300085A5E /* DNTTextTheme.h */,
+				65E588B516B350C300085A5E /* DNTTextTheme.m */,
+			);
+			name = Themes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65D0D13916B3458000C32336 /* DNTThemeBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D0D16D16B3458100C32336 /* Build configuration list for PBXNativeTarget "DNTThemeBrowser" */;
+			buildPhases = (
+				65D0D13616B3458000C32336 /* Sources */,
+				65D0D13716B3458000C32336 /* Frameworks */,
+				65D0D13816B3458000C32336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DNTThemeBrowser;
+			productName = DNTThemeBrowser;
+			productReference = 65D0D13A16B3458000C32336 /* DNTThemeBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65D0D15A16B3458000C32336 /* DNTThemeBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D0D17016B3458100C32336 /* Build configuration list for PBXNativeTarget "DNTThemeBrowserTests" */;
+			buildPhases = (
+				65D0D15616B3458000C32336 /* Sources */,
+				65D0D15716B3458000C32336 /* Frameworks */,
+				65D0D15816B3458000C32336 /* Resources */,
+				65D0D15916B3458000C32336 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65D0D16116B3458000C32336 /* PBXTargetDependency */,
+			);
+			name = DNTThemeBrowserTests;
+			productName = DNTThemeBrowserTests;
+			productReference = 65D0D15B16B3458000C32336 /* DNTThemeBrowserTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65D0D13116B3458000C32336 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DNT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Daniel Thorpe";
+			};
+			buildConfigurationList = 65D0D13416B3458000C32336 /* Build configuration list for PBXProject "DNTThemeBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65D0D12F16B3458000C32336;
+			productRefGroup = 65D0D13B16B3458000C32336 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65D0D13916B3458000C32336 /* DNTThemeBrowser */,
+				65D0D15A16B3458000C32336 /* DNTThemeBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65D0D13816B3458000C32336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D0D14916B3458000C32336 /* InfoPlist.strings in Resources */,
+				65D0D15116B3458000C32336 /* Default.png in Resources */,
+				65D0D15316B3458000C32336 /* Default@2x.png in Resources */,
+				65D0D15516B3458000C32336 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D0D15816B3458000C32336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D0D16716B3458100C32336 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65D0D15916B3458000C32336 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65D0D13616B3458000C32336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D0D14B16B3458000C32336 /* main.m in Sources */,
+				65D0D14F16B3458000C32336 /* DNTAppDelegate.m in Sources */,
+				65D0D17B16B346B800C32336 /* DNTCommonTheme.m in Sources */,
+				65E588B216B34F9A00085A5E /* DNTBodyTextTheme.m in Sources */,
+				65E588B616B350C300085A5E /* DNTTextTheme.m in Sources */,
+				65E588BB16B35B4100085A5E /* DNTBaseTheme.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D0D15616B3458000C32336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D0D16A16B3458100C32336 /* DNTThemeBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65D0D16116B3458000C32336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65D0D13916B3458000C32336 /* DNTThemeBrowser */;
+			targetProxy = 65D0D16016B3458000C32336 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65D0D14716B3458000C32336 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65D0D14816B3458000C32336 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		65D0D16516B3458000C32336 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65D0D16616B3458000C32336 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65D0D16B16B3458100C32336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65D0D16C16B3458100C32336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65D0D16E16B3458100C32336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DNTThemeBrowser/DNTThemeBrowser-Prefix.pch";
+				INFOPLIST_FILE = "DNTThemeBrowser/DNTThemeBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		65D0D16F16B3458100C32336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DNTThemeBrowser/DNTThemeBrowser-Prefix.pch";
+				INFOPLIST_FILE = "DNTThemeBrowser/DNTThemeBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		65D0D17116B3458100C32336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DNTThemeBrowser.app/DNTThemeBrowser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DNTThemeBrowser/DNTThemeBrowser-Prefix.pch";
+				INFOPLIST_FILE = "DNTThemeBrowserTests/DNTThemeBrowserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		65D0D17216B3458100C32336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DNTThemeBrowser.app/DNTThemeBrowser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DNTThemeBrowser/DNTThemeBrowser-Prefix.pch";
+				INFOPLIST_FILE = "DNTThemeBrowserTests/DNTThemeBrowserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65D0D13416B3458000C32336 /* Build configuration list for PBXProject "DNTThemeBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D0D16B16B3458100C32336 /* Debug */,
+				65D0D16C16B3458100C32336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D0D16D16B3458100C32336 /* Build configuration list for PBXNativeTarget "DNTThemeBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D0D16E16B3458100C32336 /* Debug */,
+				65D0D16F16B3458100C32336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D0D17016B3458100C32336 /* Build configuration list for PBXNativeTarget "DNTThemeBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D0D17116B3458100C32336 /* Debug */,
+				65D0D17216B3458100C32336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65D0D13116B3458000C32336 /* Project object */;
+}
