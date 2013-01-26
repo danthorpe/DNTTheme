@@ -6,9 +6,10 @@
 //  Copyright (c) 2013 Daniel Thorpe. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DNTThemeCommon.h"
+#import "DNTBaseThemeInterface.h"
 
-@interface DNTBaseTheme : NSObject
+@interface DNTBaseTheme : NSObject <DNTBaseThemeInterface>
 
 @property (nonatomic, readonly) NSCache *cache;
 

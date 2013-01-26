@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#import "DNTThemeCommon.h"
 #import "DNTColorStyleInterface.h"
 #import "DNTTextStyleInterface.h"
 

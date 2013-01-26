@@ -68,6 +68,14 @@
     return class;
 }
 
+#pragma mark - DNTBaseThemeInterface
 
+- (id <DNTTextStyleInterface>)textThemeForStyle:(DNTTextStyleKeys)cacheKey {
+    return (id <DNTTextStyleInterface>)[self theme:@protocol(DNTTextStyleInterface) forKey:cacheKey];
+}
+
+- (id <DNTButtonStyleInteface>)buttonThemeForStyle:(DNTButtonStyleKeys)cacheKey {
+    return (id <DNTButtonStyleInteface>)[self theme:@protocol(DNTButtonStyleInteface) forKey:cacheKey];
+}
 
 @end
