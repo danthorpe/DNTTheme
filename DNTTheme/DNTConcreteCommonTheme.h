@@ -16,6 +16,11 @@
 @protocol DNTComponentTheme;
 
 @interface DNTConcreteCommonTheme : DNTConcreteBaseTheme <DNTMainTheme>
+
+/// @name Theme Loading
+
+- (id <DNTComponentTheme>)loadThemeForComponent:(const NSString *)componentName;
+
 @end
 
 /// @abstract Class method based functionality.

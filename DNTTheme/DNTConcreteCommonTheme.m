@@ -50,6 +50,15 @@
     return class;
 }
 
+#pragma mark - DNTComponentTheme
+
+- (id <DNTLabelTheme>)textLabelTheme {
+    return [self labelThemeForElement:DNTTextLabelElementKey];
+}
+
+- (id <DNTLabelTheme>)detailedTextLabelTheme {
+    return [self labelThemeForElement:DNTSecondaryTextElementKey];
+}
 
 #pragma mark - DNTMainTheme
 
@@ -57,6 +66,10 @@
     id <DNTComponentTheme> theme = [self.cache objectForKey:componentName];
     NSAssert(theme, @"No theme is registered for component with name: %@", componentName);
     return theme;
+}
+
+- (id <DNTComponentTheme>)loadThemeForComponent:(const NSString *)componentName {
+    
 }
 
 @end
@@ -92,16 +105,12 @@
 
 #pragma mark - Public API
 
-/**
- * @abstract
- * Accesses the theme object for body text.
- */
 + (id <DNTLabelTheme>)textLabelTheme {
-    return [[self sharedTheme] labelThemeForElement:DNTTextLabelElementKey];
+    return [[self sharedTheme] textLabelTheme];
 }
 
 + (id <DNTLabelTheme>)detailedTextLabelTheme {
-    return [[self sharedTheme] labelThemeForElement:DNTSecondaryTextElementKey];
+    return [[self sharedTheme] detailedTextLabelTheme];
 }
 
 /**

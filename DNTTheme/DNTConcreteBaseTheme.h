@@ -13,12 +13,14 @@
 
 @property (nonatomic, readonly) NSCache *cache;
 
-/// @abstract Theme Cache
+/// @abstract Theme Resources & Caches
 
 - (id)cachedThemeForKey:(NSInteger)key;
 
 - (id)theme:(NSArray *)protocols forKey:(NSInteger)key;
 
 - (Class)classForThemeWithKey:(NSInteger)key;
+
+- (void)loadThemeResouces:(id)resource;
 
 @end

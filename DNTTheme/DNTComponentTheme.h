@@ -11,4 +11,10 @@
 
 @protocol DNTComponentTheme <DNTBaseTheme>
 
+/// @abstract Theme object for a table cell text label
+- (id <DNTLabelTheme>)textLabelTheme;
+
+/// @abstract Theme object for a table cell secondar text label
+- (id <DNTLabelTheme>)detailedTextLabelTheme;
+
 @end

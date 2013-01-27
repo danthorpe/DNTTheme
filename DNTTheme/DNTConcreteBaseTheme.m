@@ -32,6 +32,13 @@
     id theme = [self.cache objectForKey:@(key)];
     if ( !theme ) {
         theme = [[[self classForThemeWithKey:key] alloc] init];
+        if ( [theme respondsToSelector:@selector(resourcePathForThemeWithKey:)] ) {
+            NSString *resourcePath = [theme resourcePathForThemeWithKey:key];
+            if ( resourcePath ) {
+                // Get the resource info
+                // Load it into the theme class.
+            }
+        }
         [self.cache setObject:theme forKey:@(key)];
     }
     NSAssert(theme, @"Unable to create theme for key: %d", key);
@@ -49,25 +56,12 @@
 #pragma mark - Theme Classes
 
 - (Class)classForThemeWithKey:(NSInteger)key {
-    Class class = nil;
-    switch (key) {
+    [NSException raise:NSInternalInconsistencyException format:@"You must implement %@ in your custom subclass: %@", NSStringFromSelector(_cmd), NSStringFromClass([self class])];
+    return nil;
+}
 
-            // Text
-        case DNTTextFooterElementKey:
-        case DNTTextHeaderElementKey:
-        case DNTTextBodyElementKey:
-            break;
-
-            // Buttons
-        case DNTButtonPrimaryElementKey:
-        case DNTButtonSecondaryElementKey:
-        case DNTButtonTertiaryElementKey:
-
-        default:
-            break;
-    }
-    
-    return class;
+- (void)loadThemeResouces:(id)resource {
+    // no-op, but don't throw an exception.
 }
 
 #pragma mark - DNTBaseTheme
