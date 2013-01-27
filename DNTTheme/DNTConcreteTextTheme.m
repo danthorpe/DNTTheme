@@ -23,11 +23,15 @@
 #pragma mark - DNTTextThemeInterface
 
 - (UIFont *)font {
-    return [UIFont systemFontOfSize:[self fontSize]];
+    return [self fontWithSize:[self fontSize]];
 }
 
 - (CGFloat)fontSize {
     return [UIFont systemFontSize];
+}
+
+- (UIFont *)fontWithSize:(CGFloat)fontSize {
+    return [UIFont systemFontOfSize:fontSize];
 }
 
 @end

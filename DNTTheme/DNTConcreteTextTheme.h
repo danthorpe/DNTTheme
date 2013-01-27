@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 #import "DNTThemeCommon.h"
-#import "DNTColorStyleInterface.h"
-#import "DNTTextStyleInterface.h"
+#import "DNTColorStyle.h"
+#import "DNTTextStyle.h"
 
-@interface DNTConcreteTextTheme : NSObject <DNTColorStyleInterface, DNTTextStyleInterface>
+@interface DNTConcreteTextTheme : NSObject <DNTColorStyle, DNTTextStyle>
 
 @end

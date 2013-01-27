@@ -1,5 +1,5 @@
 //
-//  DNTColorStyleInterface.h
+//  DNTColorStyle.h
 //  DNTThemeBrowser
 //
 //  Created by Daniel Thorpe on 25/01/2013.
@@ -13,7 +13,7 @@
  * Methods which define colors for 
  * various contexts.
  */
-@protocol DNTColorStyleInterface <NSObject>
+@protocol DNTColorStyle <NSObject>
 
 /**
  * @abstract Background Color

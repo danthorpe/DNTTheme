@@ -9,29 +9,29 @@
 #ifndef DNTThemeBrowser_DNTThemeCommon_h
 #define DNTThemeBrowser_DNTThemeCommon_h
 
-typedef NS_ENUM(NSUInteger, DNTTextStyleKeys) {
-    DNTTextStyleBodyKey,
-    DNTTextStyleHeaderKey,
-    DNTTextStyleFooterKey,
+typedef NS_ENUM(NSUInteger, DNTTextElementKeys) {
+    DNTTextBodyElementKey,
+    DNTTextHeaderElementKey,
+    DNTTextFooterElementKey,
 
-    DNTTextStyleKeyCount
+    DNTTextElementKeysCount
 };
 
-typedef NS_ENUM(NSUInteger, DNTButtonStyleKeys) {
-    DNTButtonStylePrimaryKey = DNTTextStyleKeyCount,
-    DNTButtonStyleSecondaryKey,
-    DNTButtonStyleTertiaryKey,
+typedef NS_ENUM(NSUInteger, DNTButtonElementKeys) {
+    DNTButtonPrimaryElementKey = DNTTextElementKeysCount,
+    DNTButtonSecondaryElementKey,
+    DNTButtonTertiaryElementKey,
 
-    DNTButtonStyleKeyCount
+    DNTButtonElementKeysCount
 };
 
-@protocol DNTColorStyleInterface;
-@protocol DNTTextStyleInterface;
+@protocol DNTColorStyle;
+@protocol DNTTextStyle;
 @protocol DNTButtonStyleInteface;
 
-@protocol DNTBaseThemeInterface;
-@protocol DNTComponentThemeInterface;
-@protocol DNTPlatformThemeInterface;
+@protocol DNTBaseTheme;
+@protocol DNTComponentTheme;
+@protocol DNTMainTheme;
 
 
 #endif

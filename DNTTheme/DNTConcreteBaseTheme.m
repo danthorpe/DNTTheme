@@ -51,15 +51,15 @@
     switch (key) {
 
             // Text
-        case DNTTextStyleFooterKey:
-        case DNTTextStyleHeaderKey:
-        case DNTTextStyleBodyKey:
+        case DNTTextFooterElementKey:
+        case DNTTextHeaderElementKey:
+        case DNTTextBodyElementKey:
             break;
 
             // Buttons
-        case DNTButtonStylePrimaryKey:
-        case DNTButtonStyleSecondaryKey:
-        case DNTButtonStyleTertiaryKey:
+        case DNTButtonPrimaryElementKey:
+        case DNTButtonSecondaryElementKey:
+        case DNTButtonTertiaryElementKey:
 
         default:
             break;
@@ -68,13 +68,13 @@
     return class;
 }
 
-#pragma mark - DNTBaseThemeInterface
+#pragma mark - DNTBaseTheme
 
-- (id <DNTTextStyleInterface>)textThemeForStyle:(DNTTextStyleKeys)cacheKey {
-    return (id <DNTTextStyleInterface>)[self theme:@protocol(DNTTextStyleInterface) forKey:cacheKey];
+- (id <DNTTextStyle>)textStyleForElement:(DNTTextElementKeys)cacheKey {
+    return (id <DNTTextStyle>)[self theme:@protocol(DNTTextStyle) forKey:cacheKey];
 }
 
-- (id <DNTButtonStyleInteface>)buttonThemeForStyle:(DNTButtonStyleKeys)cacheKey {
+- (id <DNTButtonStyleInteface>)buttonStyleForElement:(DNTButtonElementKeys)cacheKey {
     return (id <DNTButtonStyleInteface>)[self theme:@protocol(DNTButtonStyleInteface) forKey:cacheKey];
 }
 

@@ -7,9 +7,9 @@
 //
 
 #import "DNTThemeCommon.h"
-#import "DNTBaseThemeInterface.h"
+#import "DNTBaseTheme.h"
 
-@interface DNTConcreteBaseTheme : NSObject <DNTBaseThemeInterface>
+@interface DNTConcreteBaseTheme : NSObject <DNTBaseTheme>
 
 @property (nonatomic, readonly) NSCache *cache;
 

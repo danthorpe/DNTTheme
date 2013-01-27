@@ -25,16 +25,16 @@
     switch (key) {
 
             // Text
-        case DNTTextStyleFooterKey:
-        case DNTTextStyleHeaderKey:
-        case DNTTextStyleBodyKey:
+        case DNTTextFooterElementKey:
+        case DNTTextHeaderElementKey:
+        case DNTTextBodyElementKey:
             class = [DNTConcreteBodyTextTheme class];
             break;
 
             // Buttons            
-        case DNTButtonStylePrimaryKey:
-        case DNTButtonStyleSecondaryKey:
-        case DNTButtonStyleTertiaryKey:
+        case DNTButtonPrimaryElementKey:
+        case DNTButtonSecondaryElementKey:
+        case DNTButtonTertiaryElementKey:
 
         default:
             break;
@@ -44,10 +44,10 @@
 }
 
 
-#pragma mark - DNTPlatformThemeInterface
+#pragma mark - DNTMainTheme
 
-- (id <DNTComponentThemeInterface>)themeForComponent:(const NSString *)componentName {
-    id <DNTComponentThemeInterface> theme = [self.cache objectForKey:componentName];
+- (id <DNTComponentTheme>)themeForComponent:(const NSString *)componentName {
+    id <DNTComponentTheme> theme = [self.cache objectForKey:componentName];
     NSAssert(theme, @"No theme is registered for component with name: %@", componentName);
     return theme;
 }
@@ -73,8 +73,8 @@
  * implement DNTPlatformTheme. It is strongly suggested
  * that you subclass DNTCommonTheme.
  */
-+ (id <DNTPlatformThemeInterface>)sharedTheme {
-    static id <DNTPlatformThemeInterface> sharedTheme = nil;
++ (id <DNTMainTheme>)sharedTheme {
+    static id <DNTMainTheme> sharedTheme = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         // Default implementation only has a single theme.
@@ -89,18 +89,18 @@
  * @abstract
  * Accesses the theme object for body text.
  */
-+ (id <DNTTextStyleInterface>)bodyTextTheme {
-    return [[self sharedTheme] textThemeForStyle:DNTTextStyleBodyKey];
++ (id <DNTTextStyle>)bodyTextTheme {
+    return [[self sharedTheme] textStyleForElement:DNTTextBodyElementKey];
 }
 
 /// @abstract Theme object for header text
-+ (id <DNTTextStyleInterface>)headerTextTheme {
-    return [[self sharedTheme] textThemeForStyle:DNTTextStyleHeaderKey];
++ (id <DNTTextStyle>)headerTextTheme {
+    return [[self sharedTheme] textStyleForElement:DNTTextHeaderElementKey];
 }
 
 /// @abstract Theme object for footer text
-+ (id <DNTTextStyleInterface>)footerTextTheme {
-    return [[self sharedTheme] textThemeForStyle:DNTTextStyleFooterKey];
++ (id <DNTTextStyle>)footerTextTheme {
+    return [[self sharedTheme] textStyleForElement:DNTTextFooterElementKey];
 }
 
 /**
@@ -111,7 +111,7 @@
  * Throws and exception if the no theme is registered for the
  * component.
  */
-+ (id <DNTComponentThemeInterface>)themeForComponent:(const NSString *)componentName {
++ (id <DNTComponentTheme>)themeForComponent:(const NSString *)componentName {
     return [[self sharedTheme] themeForComponent:componentName];
 }
 

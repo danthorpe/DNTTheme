@@ -1,5 +1,5 @@
 //
-//  DNTComponentThemeInterface.h
+//  DNTComponentTheme.h
 //  DNTThemeBrowser
 //
 //  Created by Daniel Thorpe on 25/01/2013.
@@ -7,8 +7,8 @@
 //
 
 #import "DNTThemeCommon.h"
-#import "DNTBaseThemeInterface.h"
+#import "DNTBaseTheme.h"
 
-@protocol DNTComponentThemeInterface <DNTBaseThemeInterface>
+@protocol DNTComponentTheme <DNTBaseTheme>
 
 @end

@@ -9,33 +9,33 @@
 #import <Foundation/Foundation.h>
 
 #import "DNTConcreteBaseTheme.h"
-#import "DNTPlatformThemeInterface.h"
+#import "DNTMainTheme.h"
 
-@protocol DNTColorStyleInterface;
-@protocol DNTTextStyleInterface;
-@protocol DNTComponentThemeInterface;
+@protocol DNTColorStyle;
+@protocol DNTTextStyle;
+@protocol DNTComponentTheme;
 
-@interface DNTConcreteCommonTheme : DNTConcreteBaseTheme <DNTPlatformThemeInterface>
+@interface DNTConcreteCommonTheme : DNTConcreteBaseTheme <DNTMainTheme>
 @end
 
 /// @abstract Class method based functionality.
 @interface DNTTheme : NSObject
 
 /// @abstract Shared singleton theme object
-+ (id <DNTPlatformThemeInterface>)sharedTheme;
++ (id <DNTMainTheme>)sharedTheme;
 
 /// @name Main Themes
 
 /// @abstract Theme object for body text
-+ (id <DNTTextStyleInterface>)bodyTextTheme;
++ (id <DNTTextStyle>)bodyTextTheme;
 
 /// @abstract Theme object for header text
-+ (id <DNTTextStyleInterface>)headerTextTheme;
++ (id <DNTTextStyle>)headerTextTheme;
 
 /// @abstract Theme object for footer text
-+ (id <DNTTextStyleInterface>)footerTextTheme;
++ (id <DNTTextStyle>)footerTextTheme;
 
 /// @abstract Theme object for component
-+ (id <DNTComponentThemeInterface>)themeForComponent:(const NSString *)componentName;
++ (id <DNTComponentTheme>)themeForComponent:(const NSString *)componentName;
 
 @end

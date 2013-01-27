@@ -7,7 +7,7 @@
 //
 
 #import "DNTPlatformTheme.h"
-#import "DNTComponentThemeInterface.h"
+#import "DNTComponentTheme.h"
 
 #import "DNTCommonTheme.h"
 

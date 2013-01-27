@@ -1,5 +1,5 @@
 //
-//  DNTButtonStyleInterface
+//  DNTButtonStyle
 //  DNTThemeBrowser
 //
 //  Created by Daniel Thorpe on 26/01/2013.
@@ -8,6 +8,6 @@
 
 #import "DNTThemeCommon.h"
 
-@protocol DNTButtonStyleInterface <NSObject>
+@protocol DNTButtonStyle <NSObject>
 
 @end
