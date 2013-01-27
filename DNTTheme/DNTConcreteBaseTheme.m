@@ -38,9 +38,11 @@
     return theme;
 }
 
-- (id)theme:(Protocol *)protocol forKey:(NSInteger)key {
+- (id)theme:(NSArray *)protocols forKey:(NSInteger)key {
     id theme = [self cachedThemeForKey:key];
-    NSAssert([theme conformsToProtocol:protocol], @"Cached theme: %@ does not conform to the expected protocol: %@", theme, NSStringFromProtocol(protocol));
+    for ( Protocol *protocol in protocols ) {
+        NSAssert([theme conformsToProtocol:protocol], @"Cached theme: %@ does not conform to the expected protocol: %@", theme, NSStringFromProtocol(protocol));
+    }
     return theme;
 }
 
@@ -70,12 +72,8 @@
 
 #pragma mark - DNTBaseTheme
 
-- (id <DNTTextStyle>)textStyleForElement:(DNTTextElementKeys)cacheKey {
-    return (id <DNTTextStyle>)[self theme:@protocol(DNTTextStyle) forKey:cacheKey];
-}
-
-- (id <DNTButtonStyleInteface>)buttonStyleForElement:(DNTButtonElementKeys)cacheKey {
-    return (id <DNTButtonStyleInteface>)[self theme:@protocol(DNTButtonStyleInteface) forKey:cacheKey];
+- (id <DNTLabelTheme>)labelThemeForElement:(DNTTextElementKeys)cacheKey {
+    return (id <DNTLabelTheme>)[self theme:@[ @protocol(DNTLabelTheme) ] forKey:cacheKey];
 }
 
 @end

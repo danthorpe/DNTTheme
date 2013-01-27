@@ -10,8 +10,6 @@
 
 @protocol DNTBaseTheme <NSObject>
 
-- (id <DNTTextStyle>)textStyleForElement:(DNTTextElementKeys)cacheKey;
-
-- (id <DNTTextStyle>)buttonStyleForElement:(DNTButtonElementKeys)cacheKey;
+- (id <DNTLabelTheme>)labelThemeForElement:(DNTTextElementKeys)cacheKey;
 
 @end

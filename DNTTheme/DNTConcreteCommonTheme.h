@@ -26,14 +26,11 @@
 
 /// @name Main Themes
 
-/// @abstract Theme object for body text
-+ (id <DNTTextStyle>)bodyTextTheme;
+/// @abstract Theme object for a table cell text label
++ (id <DNTLabelTheme>)textLabelTheme;
 
-/// @abstract Theme object for header text
-+ (id <DNTTextStyle>)headerTextTheme;
-
-/// @abstract Theme object for footer text
-+ (id <DNTTextStyle>)footerTextTheme;
+/// @abstract Theme object for a table cell secondar text label
++ (id <DNTLabelTheme>)detailedTextLabelTheme;
 
 /// @abstract Theme object for component
 + (id <DNTComponentTheme>)themeForComponent:(const NSString *)componentName;

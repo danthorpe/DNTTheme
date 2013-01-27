@@ -20,6 +20,10 @@
     return [UIColor blackColor];
 }
 
+- (UIColor *)highlightedColor {
+    return [UIColor whiteColor];
+}
+
 #pragma mark - DNTTextThemeInterface
 
 - (UIFont *)font {

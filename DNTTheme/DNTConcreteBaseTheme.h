@@ -17,7 +17,7 @@
 
 - (id)cachedThemeForKey:(NSInteger)key;
 
-- (id)theme:(Protocol *)protocol forKey:(NSInteger)key;
+- (id)theme:(NSArray *)protocols forKey:(NSInteger)key;
 
 - (Class)classForThemeWithKey:(NSInteger)key;
 

@@ -6,10 +6,23 @@
 //  Copyright (c) 2013 Daniel Thorpe. All rights reserved.
 //
 
-#import "DNTPlatformTheme.h"
-#import "DNTComponentTheme.h"
+#import "DNTThemeCommon.h"
 
-#import "DNTCommonTheme.h"
+// Interfaces
+#import "DNTBaseTheme.h"
+#import "DNTComponentTheme.h"
+#import "DNTMainTheme.h"
+#import "DNTLabelTheme.h"
+
+#import "DNTColorStyle.h"
+#import "DNTTextStyle.h"
+#import "DNTButtonStyle.h"
+
+#import "DNTConcreteBaseTheme.h"
+#import "DNTConcreteCommonTheme.h"
+#import "DNTConcreteTextLabelTheme.h"
+#import "DNTConcreteTextTheme.h"
+
 
 
 

@@ -1,13 +1,13 @@
 //
-//  DNTBodyTextTheme.m
+//  DNTConcreteTextLabelTheme.h
 //  DNTThemeBrowser
 //
 //  Created by Daniel Thorpe on 25/01/2013.
 //  Copyright (c) 2013 Daniel Thorpe. All rights reserved.
 //
 
-#import "DNTConcreteBodyTextTheme.h"
+#import "DNTConcreteLabelTheme.h"
 
-@implementation DNTConcreteBodyTextTheme
+@interface DNTConcreteTextLabelTheme : DNTConcreteLabelTheme
 
 @end

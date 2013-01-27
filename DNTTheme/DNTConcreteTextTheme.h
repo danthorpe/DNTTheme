@@ -12,6 +12,6 @@
 #import "DNTColorStyle.h"
 #import "DNTTextStyle.h"
 
-@interface DNTConcreteTextTheme : NSObject <DNTColorStyle, DNTTextStyle>
+@interface DNTConcreteTextTheme : NSObject <DNTTextStyle, DNTColorStyle>
 
 @end

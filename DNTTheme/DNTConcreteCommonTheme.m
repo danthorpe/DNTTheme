@@ -9,7 +9,8 @@
 #import "DNTConcreteCommonTheme.h"
 
 // Concrete classes
-#import "DNTConcreteBodyTextTheme.h"
+#import "DNTConcreteTextLabelTheme.h"
+#import "DNTConcreteDetailedTextLabelTheme.h"
 
 @interface DNTConcreteCommonTheme ( /* Private */ )
 
@@ -28,8 +29,14 @@
         case DNTTextFooterElementKey:
         case DNTTextHeaderElementKey:
         case DNTTextBodyElementKey:
-            class = [DNTConcreteBodyTextTheme class];
+        case DNTTextLabelElementKey:
+            class = [DNTConcreteTextLabelTheme class];
             break;
+
+        case DNTSecondaryTextElementKey:
+            class = [DNTConcreteDetailedTextLabelTheme class];
+            break;
+
 
             // Buttons            
         case DNTButtonPrimaryElementKey:
@@ -89,18 +96,12 @@
  * @abstract
  * Accesses the theme object for body text.
  */
-+ (id <DNTTextStyle>)bodyTextTheme {
-    return [[self sharedTheme] textStyleForElement:DNTTextBodyElementKey];
++ (id <DNTLabelTheme>)textLabelTheme {
+    return [[self sharedTheme] labelThemeForElement:DNTTextLabelElementKey];
 }
 
-/// @abstract Theme object for header text
-+ (id <DNTTextStyle>)headerTextTheme {
-    return [[self sharedTheme] textStyleForElement:DNTTextHeaderElementKey];
-}
-
-/// @abstract Theme object for footer text
-+ (id <DNTTextStyle>)footerTextTheme {
-    return [[self sharedTheme] textStyleForElement:DNTTextFooterElementKey];
++ (id <DNTLabelTheme>)detailedTextLabelTheme {
+    return [[self sharedTheme] labelThemeForElement:DNTSecondaryTextElementKey];
 }
 
 /**

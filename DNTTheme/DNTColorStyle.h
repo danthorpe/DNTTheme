@@ -32,4 +32,14 @@
  */
 - (UIColor *)foregroundColor;
 
+/**
+ * @abstract Highlight Color
+ *
+ * @discussion
+ * Used as a highlighted color to themed UILabels
+ * and UIButtons.
+ */
+- (UIColor *)highlightedColor;
+
+
 @end
