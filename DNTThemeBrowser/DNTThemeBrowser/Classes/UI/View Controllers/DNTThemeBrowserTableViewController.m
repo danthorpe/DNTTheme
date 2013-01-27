@@ -10,6 +10,8 @@
 #import "DNTThemeBrowserTheme.h"
 #import "DNTTheme.h"
 
+NSString * const DNTTableViewComponent = @"DNTTableViewComponent";
+
 @interface DNTThemeBrowserTableViewController (/* Private */)
 @property (nonatomic) NSArray *words;
 @end
@@ -84,7 +86,7 @@
     cell.detailTextLabel.text = self.words[ arc4random_uniform(self.words.count) ];
 
     // Confgiure the table view cell
-    [[DNTThemeBrowserTheme textLabelTheme] applyToLabel:cell.textLabel];
+    [[[DNTThemeBrowserTheme themeForComponent:DNTTableViewComponent] textLabelTheme] applyToLabel:cell.textLabel];
     [[DNTThemeBrowserTheme detailedTextLabelTheme] applyToLabel:cell.detailTextLabel];
 }
 
