@@ -1,0 +1,3 @@
+[submodule "DNTTheme/External/YAML"]
+	path = DNTTheme/External/YAML
+	url = git://github.com/mirek/YAML.framework.git
