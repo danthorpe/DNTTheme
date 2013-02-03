@@ -10,6 +10,7 @@
 
 // Concrete classes
 #import "DNTConcreteLabelTheme.h"
+#import "DNTConcreteNavigationBarTheme.h"
 
 @interface DNTConcreteCommonTheme ( /* Private */ )
 
@@ -20,29 +21,37 @@
 #pragma mark - Resource Loading
 
 - (NSArray *)resourcePathsForThemeWithKey:(NSInteger)key {
-    NSMutableArray *resources = [NSMutableArray array];
+
+    // Raise an exception because this method should
+    // be over-ridden
+    [NSException raise:NSInternalInconsistencyException format:@"You must implement %@ in your custom subclass: %@, there is an example here.", NSStringFromSelector(_cmd), NSStringFromClass([self class])];
+
+    NSArray *resources = nil;
     switch (key) {
 
-            // Text
+        // Text
         case DNTTextFooterElementKey:
         case DNTTextHeaderElementKey:
         case DNTTextBodyElementKey:
-            [resources addObject:@"text_theme"];
+            resources = @[ @"text_theme" ];
             break;
         case DNTTextLabelElementKey:
-            [resources addObject:@"text_theme"];
-            [resources addObject:@"text_label_theme"];
+            resources = @[ @"text_theme", @"text_label_theme" ];
             break;
         case DNTDetailedTextLabelElementKey:
-            [resources addObject:@"text_theme"];
-            [resources addObject:@"detailed_text_label_theme"];
+            resources = @[ @"text_theme", @"detailed_text_label_theme" ];
             break;
 
-            // Buttons
+        // Buttons
         case DNTButtonPrimaryElementKey:
         case DNTButtonSecondaryElementKey:
         case DNTButtonTertiaryElementKey:
-            
+
+        // Navigation items
+        case DNTNavigationBarElementKey:
+            resources = @[ @"navigation_theme" ];
+            break;
+
         default:
             break;
     }
@@ -70,6 +79,12 @@
         case DNTButtonPrimaryElementKey:
         case DNTButtonSecondaryElementKey:
         case DNTButtonTertiaryElementKey:
+            break;
+
+        // Navigation Items
+        case DNTNavigationBarElementKey:
+            class = [DNTConcreteNavigationBarTheme class];
+            break;
 
         default:
             break;
@@ -88,7 +103,16 @@
     return [self labelThemeForElement:DNTDetailedTextLabelElementKey];
 }
 
+- (id <DNTNavigationBarTheme>)navigationBarTheme {
+    return [self navgiationThemeForElement:DNTNavigationBarElementKey];
+}
+
 #pragma mark - DNTMainTheme
+
+- (void)apply {
+    // Apply navigation bar appearance
+    [[self navigationBarTheme] apply];
+}
 
 - (id <DNTComponentTheme>)themeForComponent:(const NSString *)componentName {
     id <DNTComponentTheme> theme = [self.cache objectForKey:componentName];
@@ -132,6 +156,10 @@
 }
 
 #pragma mark - Public API
+
++ (void)apply {
+    [[self sharedTheme] apply];
+}
 
 + (id <DNTLabelTheme>)textLabelTheme {
     return [[self sharedTheme] textLabelTheme];

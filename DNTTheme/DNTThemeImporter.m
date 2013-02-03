@@ -42,25 +42,6 @@ inline UIColor * UIColorFromRGB(NSInteger rgbValue) {
     return [self colorForPropertyValue:[properties objectForKey:@"highlighted"]];
 }
 
-- (UIColor *)colorForPropertyValue:(id)propertyValue {
-    UIColor *color = nil;
-    if ( [propertyValue isKindOfClass:[NSNumber class]] ) {
-        color = UIColorFromRGB( [(NSNumber *)propertyValue integerValue] );
-    } else if ( [propertyValue isKindOfClass:[NSString class]] ) {
-        NSString *strValue = (NSString *)propertyValue;
-        // Check to see if the first char is a #
-        if ( [strValue isEqualToString:@"white"] ) {
-            color = [UIColor whiteColor];
-        } else if ( [strValue isEqualToString:@"black"] ) {
-            color = [UIColor blackColor];
-        }
-    }
-    if ( propertyValue ) {
-        NSAssert(color, @"color was not created from: %@", propertyValue);
-    }
-    return color;
-}
-
 #pragma mark - DNTTextStyleImporter
 
 - (BOOL)isSystemFontFromTextStyleProperties:(NSDictionary *)properties {
@@ -85,6 +66,33 @@ inline UIColor * UIColorFromRGB(NSInteger rgbValue) {
 
 - (CGFloat)fontSizeFromTextStyleProperties:(NSDictionary *)properties {
     return [[properties objectForKey:@"size"] floatValue];
+}
+
+#pragma mark - DNTNavigationElementStyleImporter
+
+- (UIColor *)tintColorForNavigationElementStyleProperties:(NSDictionary *)properties {
+    return [self colorForPropertyValue:[properties objectForKey:@"tint"]];
+}
+
+#pragma mark - Helpers
+
+- (UIColor *)colorForPropertyValue:(id)propertyValue {
+    UIColor *color = nil;
+    if ( [propertyValue isKindOfClass:[NSNumber class]] ) {
+        color = UIColorFromRGB( [(NSNumber *)propertyValue integerValue] );
+    } else if ( [propertyValue isKindOfClass:[NSString class]] ) {
+        NSString *strValue = (NSString *)propertyValue;
+        // Check to see if the first char is a #
+        if ( [strValue isEqualToString:@"white"] ) {
+            color = [UIColor whiteColor];
+        } else if ( [strValue isEqualToString:@"black"] ) {
+            color = [UIColor blackColor];
+        }
+    }
+    if ( propertyValue ) {
+        NSAssert(color, @"color was not created from: %@", propertyValue);
+    }
+    return color;
 }
 
 @end

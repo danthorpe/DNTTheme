@@ -7,13 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#import "DNTColorStyle.h"
-#import "DNTTextStyle.h"
+#import "DNTLoadableTheme.h"
 
 extern inline UIColor * UIColorFromRGB(NSInteger rgbValue);
 
-@interface DNTThemeImporter : NSObject <DNTColorStyleImporter, DNTTextStyleImporter>
+@interface DNTThemeImporter : NSObject <DNTStyleImporter>
 
 - (NSArray *)themePropertiesFromResources:(NSArray *)resource;
 

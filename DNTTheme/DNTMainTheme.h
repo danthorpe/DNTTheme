@@ -11,6 +11,9 @@
 
 @protocol DNTMainTheme <DNTComponentTheme>
 
+/// @abstract Apply themes for UIAppearance
+- (void)apply;
+
 /// @return an object which implements DNTComponentTheme.
 - (id <DNTComponentTheme>)themeForComponent:(const NSString *)componentName;
 

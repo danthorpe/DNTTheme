@@ -13,10 +13,15 @@
 @implementation DNTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    // UIAppearance stuff
+    [DNTThemeBrowserTheme apply];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[DNTThemeBrowserTableViewController alloc] init]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 

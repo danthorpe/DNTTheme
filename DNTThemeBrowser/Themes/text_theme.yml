@@ -1,5 +1,5 @@
 --- # Basic text theme
-name:  text
+name:  default
 styles: [text, color]
 text:
     size: system

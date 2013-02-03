@@ -1,5 +1,5 @@
 --- # Basic text theme
-name:  text
+name:  detailedTextLabel
 styles: [text, color]
 text:
     size: 14.f

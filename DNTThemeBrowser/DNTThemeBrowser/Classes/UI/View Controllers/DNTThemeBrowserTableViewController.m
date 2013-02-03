@@ -7,8 +7,6 @@
 //
 
 #import "DNTThemeBrowserTableViewController.h"
-#import "DNTThemeBrowserTheme.h"
-#import "DNTTheme.h"
 
 NSString * const DNTTableViewComponent = @"DNTTableViewComponent";
 

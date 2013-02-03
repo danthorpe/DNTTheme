@@ -17,6 +17,9 @@
 		6519D65A16BEB81100CF4E89 /* text_label_theme~ipad.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6519D65716BEB81000CF4E89 /* text_label_theme~ipad.yml */; };
 		6519D65B16BEB81100CF4E89 /* detailed_text_label_theme~ipad.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6519D65816BEB81000CF4E89 /* detailed_text_label_theme~ipad.yml */; };
 		6519D65C16BEB81100CF4E89 /* text_theme~ipad.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6519D65916BEB81100CF4E89 /* text_theme~ipad.yml */; };
+		6519D66316BEBEFA00CF4E89 /* DNTConcreteNavigationBarTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6519D66216BEBEFA00CF4E89 /* DNTConcreteNavigationBarTheme.m */; };
+		6519D66716BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6519D66616BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.m */; };
+		6519D66916BEDB6600CF4E89 /* navigation_theme.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6519D66816BEDB6500CF4E89 /* navigation_theme.yml */; };
 		657A5AB416B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB316B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.m */; };
 		657A5AB716B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB616B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.m */; };
 		657A5ABA16B5BF33005B982A /* DNTThemeBrowserTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB916B5BF33005B982A /* DNTThemeBrowserTheme.m */; };
@@ -92,6 +95,13 @@
 		6519D65716BEB81000CF4E89 /* text_label_theme~ipad.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "text_label_theme~ipad.yml"; path = "Themes/text_label_theme~ipad.yml"; sourceTree = "<group>"; };
 		6519D65816BEB81000CF4E89 /* detailed_text_label_theme~ipad.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "detailed_text_label_theme~ipad.yml"; path = "Themes/detailed_text_label_theme~ipad.yml"; sourceTree = "<group>"; };
 		6519D65916BEB81100CF4E89 /* text_theme~ipad.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "text_theme~ipad.yml"; path = "Themes/text_theme~ipad.yml"; sourceTree = "<group>"; };
+		6519D65F16BEBB3C00CF4E89 /* DNTNavigationElementStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTNavigationElementStyle.h; path = ../DNTTheme/DNTNavigationElementStyle.h; sourceTree = "<group>"; };
+		6519D66016BEBBAC00CF4E89 /* DNTNavigationBarTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTNavigationBarTheme.h; path = ../DNTTheme/DNTNavigationBarTheme.h; sourceTree = "<group>"; };
+		6519D66116BEBEFA00CF4E89 /* DNTConcreteNavigationBarTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteNavigationBarTheme.h; path = ../DNTTheme/DNTConcreteNavigationBarTheme.h; sourceTree = "<group>"; };
+		6519D66216BEBEFA00CF4E89 /* DNTConcreteNavigationBarTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteNavigationBarTheme.m; path = ../DNTTheme/DNTConcreteNavigationBarTheme.m; sourceTree = "<group>"; };
+		6519D66516BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteNavigationElementTheme.h; path = ../DNTTheme/DNTConcreteNavigationElementTheme.h; sourceTree = "<group>"; };
+		6519D66616BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteNavigationElementTheme.m; path = ../DNTTheme/DNTConcreteNavigationElementTheme.m; sourceTree = "<group>"; };
+		6519D66816BEDB6500CF4E89 /* navigation_theme.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = navigation_theme.yml; path = Themes/navigation_theme.yml; sourceTree = "<group>"; };
 		657A5AB216B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTThemeBrowserDemoPhoneTheme.h; path = Classes/Themes/DNTThemeBrowserDemoPhoneTheme.h; sourceTree = "<group>"; };
 		657A5AB316B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTThemeBrowserDemoPhoneTheme.m; path = Classes/Themes/DNTThemeBrowserDemoPhoneTheme.m; sourceTree = "<group>"; };
 		657A5AB516B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTThemeBrowserDemoPadTheme.h; path = Classes/Themes/DNTThemeBrowserDemoPadTheme.h; sourceTree = "<group>"; };
@@ -168,6 +178,7 @@
 				65E588AE16B34DA000085A5E /* DNTColorStyle.h */,
 				65E588AF16B34DBE00085A5E /* DNTTextStyle.h */,
 				65E588B716B354A600085A5E /* DNTButtonStyle.h */,
+				6519D65F16BEBB3C00CF4E89 /* DNTNavigationElementStyle.h */,
 			);
 			name = Styles;
 			sourceTree = "<group>";
@@ -180,6 +191,7 @@
 				65E588AC16B34B0200085A5E /* DNTComponentTheme.h */,
 				65D0D17C16B3474F00C32336 /* DNTMainTheme.h */,
 				657A5ABB16B5C4B2005B982A /* DNTLabelTheme.h */,
+				6519D66016BEBBAC00CF4E89 /* DNTNavigationBarTheme.h */,
 			);
 			name = Themes;
 			sourceTree = "<group>";
@@ -252,11 +264,23 @@
 		6519D65E16BEB82800CF4E89 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				6519D66816BEDB6500CF4E89 /* navigation_theme.yml */,
 				6519D65316BEA4E700CF4E89 /* detailed_text_label_theme.yml */,
 				6519D65416BEA4E700CF4E89 /* text_label_theme.yml */,
 				6519D65116BEA47C00CF4E89 /* text_theme.yml */,
 			);
 			name = iPhone;
+			sourceTree = "<group>";
+		};
+		6519D66416BEBEFF00CF4E89 /* Navigation Elements */ = {
+			isa = PBXGroup;
+			children = (
+				6519D66116BEBEFA00CF4E89 /* DNTConcreteNavigationBarTheme.h */,
+				6519D66216BEBEFA00CF4E89 /* DNTConcreteNavigationBarTheme.m */,
+				6519D66516BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.h */,
+				6519D66616BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.m */,
+			);
+			name = "Navigation Elements";
 			sourceTree = "<group>";
 		};
 		657A5AAD16B5BDF8005B982A /* Themes */ = {
@@ -389,6 +413,7 @@
 				65D0D17916B346B800C32336 /* DNTConcreteCommonTheme.h */,
 				65D0D17A16B346B800C32336 /* DNTConcreteCommonTheme.m */,
 				657A5AC216B5C845005B982A /* Text & Labels */,
+				6519D66416BEBEFF00CF4E89 /* Navigation Elements */,
 				6519D62616BDC20100CF4E89 /* Utils */,
 			);
 			name = Classes;
@@ -507,6 +532,7 @@
 				6519D65A16BEB81100CF4E89 /* text_label_theme~ipad.yml in Resources */,
 				6519D65B16BEB81100CF4E89 /* detailed_text_label_theme~ipad.yml in Resources */,
 				6519D65C16BEB81100CF4E89 /* text_theme~ipad.yml in Resources */,
+				6519D66916BEDB6600CF4E89 /* navigation_theme.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +578,8 @@
 				657A5ABA16B5BF33005B982A /* DNTThemeBrowserTheme.m in Sources */,
 				657A5ABE16B5C543005B982A /* DNTConcreteLabelTheme.m in Sources */,
 				6519D62516BDC1FA00CF4E89 /* DNTThemeImporter.m in Sources */,
+				6519D66316BEBEFA00CF4E89 /* DNTConcreteNavigationBarTheme.m in Sources */,
+				6519D66716BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

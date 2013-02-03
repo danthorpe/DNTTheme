@@ -31,11 +31,17 @@
 
 /// @name Main Themes
 
+/// @abstract Apply themes for UIAppearance
++ (void)apply;
+
 /// @abstract Theme object for a table cell text label
 + (id <DNTLabelTheme>)textLabelTheme;
 
 /// @abstract Theme object for a table cell secondar text label
 + (id <DNTLabelTheme>)detailedTextLabelTheme;
+
+/// @abstract Theme object for a UINavigationBar
++ (id <DNTNavigationBarTheme>)navigationBarTheme;
 
 /// @abstract Theme object for component
 + (id <DNTComponentTheme>)themeForComponent:(const NSString *)componentName;

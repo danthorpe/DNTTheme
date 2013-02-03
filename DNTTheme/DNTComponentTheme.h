@@ -17,4 +17,7 @@
 /// @abstract Theme object for a table cell secondar text label
 - (id <DNTLabelTheme>)detailedTextLabelTheme;
 
+/// @abstract Theme object for a UINavigationBar
+- (id <DNTNavigationBarTheme>)navigationBarTheme;
+
 @end

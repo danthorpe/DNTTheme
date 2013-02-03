@@ -79,4 +79,8 @@
     return (id <DNTLabelTheme>)[self theme:@[ @protocol(DNTLabelTheme) ] forKey:cacheKey];
 }
 
+- (id <DNTNavigationBarTheme>)navgiationThemeForElement:(DNTNavigationItemsElementKeys)cacheKey {
+    return (id <DNTNavigationBarTheme>)[self theme:@[ @protocol(DNTNavigationBarTheme) ] forKey:cacheKey];
+}
+
 @end

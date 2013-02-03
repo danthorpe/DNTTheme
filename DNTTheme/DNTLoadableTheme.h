@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 
 #import "DNTThemeCommon.h"
+#import "DNTColorStyle.h"
+#import "DNTTextStyle.h"
+#import "DNTNavigationElementStyle.h"
+
+@protocol DNTStyleImporter <DNTColorStyleImporter, DNTTextStyleImporter, DNTNavigationElementStyleImporter>
+@end
 
 @protocol DNTLoadableTheme <NSObject>
 
@@ -19,6 +25,6 @@
  * Configure the theme using the properties provided
  * by this dictionary
  */
-- (void)configureWithProperties:(NSArray *)properties importer:(id <DNTColorStyleImporter, DNTTextStyleImporter>)importer;
+- (void)configureWithProperties:(NSArray *)properties importer:(id <DNTStyleImporter>)importer;
 
 @end

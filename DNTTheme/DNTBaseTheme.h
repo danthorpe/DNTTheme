@@ -12,6 +12,10 @@
 
 /// @name Vend Themes
 
+/// @abstract a label theme for an element
 - (id <DNTLabelTheme>)labelThemeForElement:(DNTTextElementKeys)cacheKey;
+
+/// @abstract a navigation theme for an element
+- (id <DNTNavigationBarTheme>)navgiationThemeForElement:(DNTNavigationItemsElementKeys)cacheKey;
 
 @end
