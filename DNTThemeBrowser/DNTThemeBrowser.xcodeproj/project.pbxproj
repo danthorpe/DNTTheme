@@ -18,7 +18,6 @@
 		657A5AB716B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB616B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.m */; };
 		657A5ABA16B5BF33005B982A /* DNTThemeBrowserTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB916B5BF33005B982A /* DNTThemeBrowserTheme.m */; };
 		657A5ABE16B5C543005B982A /* DNTConcreteLabelTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5ABD16B5C543005B982A /* DNTConcreteLabelTheme.m */; };
-		657A5AC116B5C785005B982A /* DNTConcreteDetailedTextLabelTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AC016B5C785005B982A /* DNTConcreteDetailedTextLabelTheme.m */; };
 		65D0D13F16B3458000C32336 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D13E16B3458000C32336 /* UIKit.framework */; };
 		65D0D14116B3458000C32336 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D14016B3458000C32336 /* Foundation.framework */; };
 		65D0D14316B3458000C32336 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D14216B3458000C32336 /* CoreGraphics.framework */; };
@@ -34,7 +33,6 @@
 		65D0D16716B3458100C32336 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D0D16516B3458000C32336 /* InfoPlist.strings */; };
 		65D0D16A16B3458100C32336 /* DNTThemeBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D0D16916B3458100C32336 /* DNTThemeBrowserTests.m */; };
 		65D0D17B16B346B800C32336 /* DNTConcreteCommonTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D0D17A16B346B800C32336 /* DNTConcreteCommonTheme.m */; };
-		65E588B216B34F9A00085A5E /* DNTConcreteTextLabelTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588B116B34F9A00085A5E /* DNTConcreteTextLabelTheme.m */; };
 		65E588B616B350C300085A5E /* DNTConcreteTextTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588B516B350C300085A5E /* DNTConcreteTextTheme.m */; };
 		65E588BB16B35B4100085A5E /* DNTConcreteBaseTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E588BA16B35B4100085A5E /* DNTConcreteBaseTheme.m */; };
 /* End PBXBuildFile section */
@@ -97,8 +95,6 @@
 		657A5ABB16B5C4B2005B982A /* DNTLabelTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTLabelTheme.h; path = ../DNTTheme/DNTLabelTheme.h; sourceTree = "<group>"; };
 		657A5ABC16B5C543005B982A /* DNTConcreteLabelTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteLabelTheme.h; path = ../DNTTheme/DNTConcreteLabelTheme.h; sourceTree = "<group>"; };
 		657A5ABD16B5C543005B982A /* DNTConcreteLabelTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteLabelTheme.m; path = ../DNTTheme/DNTConcreteLabelTheme.m; sourceTree = "<group>"; };
-		657A5ABF16B5C785005B982A /* DNTConcreteDetailedTextLabelTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteDetailedTextLabelTheme.h; path = ../DNTTheme/DNTConcreteDetailedTextLabelTheme.h; sourceTree = "<group>"; };
-		657A5AC016B5C785005B982A /* DNTConcreteDetailedTextLabelTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteDetailedTextLabelTheme.m; path = ../DNTTheme/DNTConcreteDetailedTextLabelTheme.m; sourceTree = "<group>"; };
 		65D0D13A16B3458000C32336 /* DNTThemeBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNTThemeBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D0D13E16B3458000C32336 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65D0D14016B3458000C32336 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,8 +121,6 @@
 		65E588AC16B34B0200085A5E /* DNTComponentTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTComponentTheme.h; path = ../DNTTheme/DNTComponentTheme.h; sourceTree = "<group>"; };
 		65E588AE16B34DA000085A5E /* DNTColorStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTColorStyle.h; path = ../DNTTheme/DNTColorStyle.h; sourceTree = "<group>"; };
 		65E588AF16B34DBE00085A5E /* DNTTextStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTTextStyle.h; path = ../DNTTheme/DNTTextStyle.h; sourceTree = "<group>"; };
-		65E588B016B34F9A00085A5E /* DNTConcreteTextLabelTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteTextLabelTheme.h; path = ../DNTTheme/DNTConcreteTextLabelTheme.h; sourceTree = "<group>"; };
-		65E588B116B34F9A00085A5E /* DNTConcreteTextLabelTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteTextLabelTheme.m; path = ../DNTTheme/DNTConcreteTextLabelTheme.m; sourceTree = "<group>"; };
 		65E588B416B350C300085A5E /* DNTConcreteTextTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteTextTheme.h; path = ../DNTTheme/DNTConcreteTextTheme.h; sourceTree = "<group>"; };
 		65E588B516B350C300085A5E /* DNTConcreteTextTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteTextTheme.m; path = ../DNTTheme/DNTConcreteTextTheme.m; sourceTree = "<group>"; };
 		65E588B716B354A600085A5E /* DNTButtonStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTButtonStyle.h; path = ../DNTTheme/DNTButtonStyle.h; sourceTree = "<group>"; };
@@ -256,10 +250,6 @@
 		657A5AC216B5C845005B982A /* Labels */ = {
 			isa = PBXGroup;
 			children = (
-				65E588B016B34F9A00085A5E /* DNTConcreteTextLabelTheme.h */,
-				65E588B116B34F9A00085A5E /* DNTConcreteTextLabelTheme.m */,
-				657A5ABF16B5C785005B982A /* DNTConcreteDetailedTextLabelTheme.h */,
-				657A5AC016B5C785005B982A /* DNTConcreteDetailedTextLabelTheme.m */,
 				657A5ABC16B5C543005B982A /* DNTConcreteLabelTheme.h */,
 				657A5ABD16B5C543005B982A /* DNTConcreteLabelTheme.m */,
 				65E588B416B350C300085A5E /* DNTConcreteTextTheme.h */,
@@ -526,7 +516,6 @@
 				65D0D14B16B3458000C32336 /* main.m in Sources */,
 				65D0D14F16B3458000C32336 /* DNTAppDelegate.m in Sources */,
 				65D0D17B16B346B800C32336 /* DNTConcreteCommonTheme.m in Sources */,
-				65E588B216B34F9A00085A5E /* DNTConcreteTextLabelTheme.m in Sources */,
 				65E588B616B350C300085A5E /* DNTConcreteTextTheme.m in Sources */,
 				65E588BB16B35B4100085A5E /* DNTConcreteBaseTheme.m in Sources */,
 				6510753416B46DA900539468 /* DNTThemeBrowserTableViewController.m in Sources */,
@@ -534,7 +523,6 @@
 				657A5AB716B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.m in Sources */,
 				657A5ABA16B5BF33005B982A /* DNTThemeBrowserTheme.m in Sources */,
 				657A5ABE16B5C543005B982A /* DNTConcreteLabelTheme.m in Sources */,
-				657A5AC116B5C785005B982A /* DNTConcreteDetailedTextLabelTheme.m in Sources */,
 				6519D62516BDC1FA00CF4E89 /* DNTThemeImporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

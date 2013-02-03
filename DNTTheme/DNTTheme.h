@@ -20,7 +20,6 @@
 
 #import "DNTConcreteBaseTheme.h"
 #import "DNTConcreteCommonTheme.h"
-#import "DNTConcreteTextLabelTheme.h"
 #import "DNTConcreteTextTheme.h"
 
 

@@ -9,8 +9,7 @@
 #import "DNTConcreteCommonTheme.h"
 
 // Concrete classes
-#import "DNTConcreteTextLabelTheme.h"
-#import "DNTConcreteDetailedTextLabelTheme.h"
+#import "DNTConcreteLabelTheme.h"
 
 @interface DNTConcreteCommonTheme ( /* Private */ )
 
@@ -56,20 +55,18 @@
     
     switch (key) {
 
-            // Text
+        // Text
         case DNTTextFooterElementKey:
         case DNTTextHeaderElementKey:
         case DNTTextBodyElementKey:
+            break;
+
         case DNTTextLabelElementKey:
-            class = [DNTConcreteTextLabelTheme class];
-            break;
-
         case DNTDetailedTextLabelElementKey:
-            class = [DNTConcreteDetailedTextLabelTheme class];
+            class = [DNTConcreteLabelTheme class];
             break;
 
-
-            // Buttons            
+        // Buttons            
         case DNTButtonPrimaryElementKey:
         case DNTButtonSecondaryElementKey:
         case DNTButtonTertiaryElementKey:
