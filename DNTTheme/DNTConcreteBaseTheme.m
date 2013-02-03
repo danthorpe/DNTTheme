@@ -8,10 +8,13 @@
 
 #import "DNTConcreteBaseTheme.h"
 #import "DNTThemeCommon.h"
+#import "DNTLoadableTheme.h"
+#import "DNTThemeImporter.h"
 
 @interface DNTConcreteBaseTheme ( /* Private */ )
 
 @property (nonatomic, readwrite) NSCache *cache;
+@property (nonatomic) DNTThemeImporter *importer;
 
 @end
 
@@ -22,6 +25,7 @@
     self = [super init];
     if (self) {
         self.cache = [[NSCache alloc] init];
+        self.importer = [[DNTThemeImporter alloc] init];
     }
     return self;
 }
@@ -32,11 +36,11 @@
     id theme = [self.cache objectForKey:@(key)];
     if ( !theme ) {
         theme = [[[self classForThemeWithKey:key] alloc] init];
-        if ( [theme respondsToSelector:@selector(resourcePathForThemeWithKey:)] ) {
-            NSString *resourcePath = [theme resourcePathForThemeWithKey:key];
-            if ( resourcePath ) {
-                // Get the resource info
-                // Load it into the theme class.
+        if ( [theme conformsToProtocol:@protocol(DNTLoadableTheme)] ) {
+            NSArray *resources = [self resourcePathsForThemeWithKey:key];
+            if ( resources ) {
+                // Configure the theme
+                [theme configureWithProperties:[self.importer themePropertiesFromResources:resources] importer:self.importer];
             }
         }
         [self.cache setObject:theme forKey:@(key)];
@@ -56,6 +60,11 @@
 #pragma mark - Theme Classes
 
 - (Class)classForThemeWithKey:(NSInteger)key {
+    [NSException raise:NSInternalInconsistencyException format:@"You must implement %@ in your custom subclass: %@", NSStringFromSelector(_cmd), NSStringFromClass([self class])];
+    return nil;
+}
+
+- (NSArray *)resourcePathsForThemeWithKey:(NSInteger)key {
     [NSException raise:NSInternalInconsistencyException format:@"You must implement %@ in your custom subclass: %@", NSStringFromSelector(_cmd), NSStringFromClass([self class])];
     return nil;
 }

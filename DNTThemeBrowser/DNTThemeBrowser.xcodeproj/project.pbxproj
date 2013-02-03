@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6510753416B46DA900539468 /* DNTThemeBrowserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510753316B46DA900539468 /* DNTThemeBrowserTableViewController.m */; };
+		6519D62516BDC1FA00CF4E89 /* DNTThemeImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6519D62416BDC1FA00CF4E89 /* DNTThemeImporter.m */; };
+		6519D64A16BDC75A00CF4E89 /* libYACYAML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6519D64316BDC73100CF4E89 /* libYACYAML.a */; };
+		6519D64C16BDC76D00CF4E89 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6519D64B16BDC76D00CF4E89 /* libresolv.dylib */; };
+		6519D65216BEA47C00CF4E89 /* text_theme.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6519D65116BEA47C00CF4E89 /* text_theme.yml */; };
+		6519D65516BEA4E700CF4E89 /* detailed_text_label_theme.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6519D65316BEA4E700CF4E89 /* detailed_text_label_theme.yml */; };
+		6519D65616BEA4E700CF4E89 /* text_label_theme.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6519D65416BEA4E700CF4E89 /* text_label_theme.yml */; };
 		657A5AB416B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB316B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.m */; };
 		657A5AB716B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB616B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.m */; };
 		657A5ABA16B5BF33005B982A /* DNTThemeBrowserTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB916B5BF33005B982A /* DNTThemeBrowserTheme.m */; };
@@ -34,6 +40,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6519D64216BDC73100CF4E89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6519D63C16BDC73100CF4E89 /* YACYAML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7DDC030E156541F8001832F5;
+			remoteInfo = YACYAML;
+		};
+		6519D64416BDC73100CF4E89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6519D63C16BDC73100CF4E89 /* YACYAML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7DDC031E156541F8001832F5;
+			remoteInfo = YACYAMLTests;
+		};
+		6519D64616BDC73100CF4E89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6519D63C16BDC73100CF4E89 /* YACYAML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7DE3E3AC15654430006663D2;
+			remoteInfo = libYAML;
+		};
+		6519D64816BDC73B00CF4E89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6519D63C16BDC73100CF4E89 /* YACYAML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DDC030D156541F8001832F5;
+			remoteInfo = YACYAML;
+		};
 		65D0D16016B3458000C32336 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 65D0D13116B3458000C32336 /* Project object */;
@@ -46,6 +80,14 @@
 /* Begin PBXFileReference section */
 		6510753216B46DA900539468 /* DNTThemeBrowserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTThemeBrowserTableViewController.h; path = "Classes/UI/View Controllers/DNTThemeBrowserTableViewController.h"; sourceTree = "<group>"; };
 		6510753316B46DA900539468 /* DNTThemeBrowserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTThemeBrowserTableViewController.m; path = "Classes/UI/View Controllers/DNTThemeBrowserTableViewController.m"; sourceTree = "<group>"; };
+		6519D62316BDC1FA00CF4E89 /* DNTThemeImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTThemeImporter.h; path = ../DNTTheme/DNTThemeImporter.h; sourceTree = "<group>"; };
+		6519D62416BDC1FA00CF4E89 /* DNTThemeImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTThemeImporter.m; path = ../DNTTheme/DNTThemeImporter.m; sourceTree = "<group>"; };
+		6519D63C16BDC73100CF4E89 /* YACYAML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YACYAML.xcodeproj; path = ../DNTTheme/External/YACYAML/YACYAML.xcodeproj; sourceTree = "<group>"; };
+		6519D64B16BDC76D00CF4E89 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		6519D64D16BDCACA00CF4E89 /* DNTLoadableTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTLoadableTheme.h; path = ../DNTTheme/DNTLoadableTheme.h; sourceTree = "<group>"; };
+		6519D65116BEA47C00CF4E89 /* text_theme.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = text_theme.yml; path = Themes/text_theme.yml; sourceTree = "<group>"; };
+		6519D65316BEA4E700CF4E89 /* detailed_text_label_theme.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = detailed_text_label_theme.yml; path = Themes/detailed_text_label_theme.yml; sourceTree = "<group>"; };
+		6519D65416BEA4E700CF4E89 /* text_label_theme.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = text_label_theme.yml; path = Themes/text_label_theme.yml; sourceTree = "<group>"; };
 		657A5AB216B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTThemeBrowserDemoPhoneTheme.h; path = Classes/Themes/DNTThemeBrowserDemoPhoneTheme.h; sourceTree = "<group>"; };
 		657A5AB316B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTThemeBrowserDemoPhoneTheme.m; path = Classes/Themes/DNTThemeBrowserDemoPhoneTheme.m; sourceTree = "<group>"; };
 		657A5AB516B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTThemeBrowserDemoPadTheme.h; path = Classes/Themes/DNTThemeBrowserDemoPadTheme.h; sourceTree = "<group>"; };
@@ -99,6 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6519D64C16BDC76D00CF4E89 /* libresolv.dylib in Frameworks */,
+				6519D64A16BDC75A00CF4E89 /* libYACYAML.a in Frameworks */,
 				65D0D13F16B3458000C32336 /* UIKit.framework in Frameworks */,
 				65D0D14116B3458000C32336 /* Foundation.framework in Frameworks */,
 				65D0D14316B3458000C32336 /* CoreGraphics.framework in Frameworks */,
@@ -132,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				65E588BC16B35C0100085A5E /* DNTBaseTheme.h */,
+				6519D64D16BDCACA00CF4E89 /* DNTLoadableTheme.h */,
 				65E588AC16B34B0200085A5E /* DNTComponentTheme.h */,
 				65D0D17C16B3474F00C32336 /* DNTMainTheme.h */,
 				657A5ABB16B5C4B2005B982A /* DNTLabelTheme.h */,
@@ -165,6 +210,36 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		6519D62616BDC20100CF4E89 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6519D62316BDC1FA00CF4E89 /* DNTThemeImporter.h */,
+				6519D62416BDC1FA00CF4E89 /* DNTThemeImporter.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		6519D63D16BDC73100CF4E89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6519D64316BDC73100CF4E89 /* libYACYAML.a */,
+				6519D64516BDC73100CF4E89 /* YACYAMLTests.octest */,
+				6519D64716BDC73100CF4E89 /* libYAML.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6519D65016BEA43700CF4E89 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				6519D65316BEA4E700CF4E89 /* detailed_text_label_theme.yml */,
+				6519D65416BEA4E700CF4E89 /* text_label_theme.yml */,
+				6519D65116BEA47C00CF4E89 /* text_theme.yml */,
+			);
+			name = Themes;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		657A5AAD16B5BDF8005B982A /* Themes */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +271,7 @@
 		65D0D12F16B3458000C32336 = {
 			isa = PBXGroup;
 			children = (
+				6519D63C16BDC73100CF4E89 /* YACYAML.xcodeproj */,
 				65D0D17716B3461300C32336 /* DNTTheme */,
 				65D0D14416B3458000C32336 /* DNTThemeBrowser */,
 				65D0D16216B3458000C32336 /* DNTThemeBrowserTests */,
@@ -216,6 +292,7 @@
 		65D0D13D16B3458000C32336 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6519D64B16BDC76D00CF4E89 /* libresolv.dylib */,
 				65D0D13E16B3458000C32336 /* UIKit.framework */,
 				65D0D14016B3458000C32336 /* Foundation.framework */,
 				65D0D14216B3458000C32336 /* CoreGraphics.framework */,
@@ -229,6 +306,7 @@
 			children = (
 				65D0D14D16B3458000C32336 /* DNTAppDelegate.h */,
 				65D0D14E16B3458000C32336 /* DNTAppDelegate.m */,
+				6519D65016BEA43700CF4E89 /* Themes */,
 				65D0D14516B3458000C32336 /* Supporting Files */,
 				6510753716B46DEA00539468 /* Classes */,
 			);
@@ -296,6 +374,7 @@
 				65D0D17916B346B800C32336 /* DNTConcreteCommonTheme.h */,
 				65D0D17A16B346B800C32336 /* DNTConcreteCommonTheme.m */,
 				657A5AC216B5C845005B982A /* Labels */,
+				6519D62616BDC20100CF4E89 /* Utils */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -314,6 +393,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6519D64916BDC73B00CF4E89 /* PBXTargetDependency */,
 			);
 			name = DNTThemeBrowser;
 			productName = DNTThemeBrowser;
@@ -359,6 +439,12 @@
 			mainGroup = 65D0D12F16B3458000C32336;
 			productRefGroup = 65D0D13B16B3458000C32336 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6519D63D16BDC73100CF4E89 /* Products */;
+					ProjectRef = 6519D63C16BDC73100CF4E89 /* YACYAML.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				65D0D13916B3458000C32336 /* DNTThemeBrowser */,
@@ -366,6 +452,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6519D64316BDC73100CF4E89 /* libYACYAML.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libYACYAML.a;
+			remoteRef = 6519D64216BDC73100CF4E89 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6519D64516BDC73100CF4E89 /* YACYAMLTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = YACYAMLTests.octest;
+			remoteRef = 6519D64416BDC73100CF4E89 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6519D64716BDC73100CF4E89 /* libYAML.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libYAML.a;
+			remoteRef = 6519D64616BDC73100CF4E89 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		65D0D13816B3458000C32336 /* Resources */ = {
@@ -376,6 +486,9 @@
 				65D0D15116B3458000C32336 /* Default.png in Resources */,
 				65D0D15316B3458000C32336 /* Default@2x.png in Resources */,
 				65D0D15516B3458000C32336 /* Default-568h@2x.png in Resources */,
+				6519D65216BEA47C00CF4E89 /* text_theme.yml in Resources */,
+				6519D65516BEA4E700CF4E89 /* detailed_text_label_theme.yml in Resources */,
+				6519D65616BEA4E700CF4E89 /* text_label_theme.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +535,7 @@
 				657A5ABA16B5BF33005B982A /* DNTThemeBrowserTheme.m in Sources */,
 				657A5ABE16B5C543005B982A /* DNTConcreteLabelTheme.m in Sources */,
 				657A5AC116B5C785005B982A /* DNTConcreteDetailedTextLabelTheme.m in Sources */,
+				6519D62516BDC1FA00CF4E89 /* DNTThemeImporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +550,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6519D64916BDC73B00CF4E89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YACYAML;
+			targetProxy = 6519D64816BDC73B00CF4E89 /* PBXContainerItemProxy */;
+		};
 		65D0D16116B3458000C32336 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 65D0D13916B3458000C32336 /* DNTThemeBrowser */;
@@ -466,7 +585,7 @@
 		65D0D16B16B3458100C32336 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -494,7 +613,7 @@
 		65D0D16C16B3458100C32336 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -519,7 +638,15 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DNTThemeBrowser/DNTThemeBrowser-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+				);
 				INFOPLIST_FILE = "DNTThemeBrowser/DNTThemeBrowser-Info.plist";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -530,7 +657,15 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DNTThemeBrowser/DNTThemeBrowser-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+				);
 				INFOPLIST_FILE = "DNTThemeBrowser/DNTThemeBrowser-Info.plist";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

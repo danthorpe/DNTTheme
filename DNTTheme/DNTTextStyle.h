@@ -25,3 +25,19 @@
 - (UIFont *)fontWithSize:(CGFloat)fontSize;
 
 @end
+
+@protocol DNTTextStyleImporter <NSObject>
+
+- (BOOL)isSystemFontFromTextStyleProperties:(NSDictionary *)properties;
+
+- (BOOL)isSystemFontSizeFromTextStyleProperties:(NSDictionary *)properties;
+
+- (BOOL)isBoldSystemFontFromTextStyleProperties:(NSDictionary *)properties;
+
+- (BOOL)isItalicSystemFontFromTextStyleProperties:(NSDictionary *)properties;
+
+- (NSString *)fontNameFromTextStyleProperties:(NSDictionary *)properties;
+
+- (CGFloat)fontSizeFromTextStyleProperties:(NSDictionary *)properties;
+
+@end

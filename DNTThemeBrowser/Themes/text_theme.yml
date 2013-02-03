@@ -1,0 +1,10 @@
+--- # Basic text theme
+name:  text
+styles: [text, color]
+text:
+    size: system
+    name: system
+color:
+    background: white
+    foreground: black
+    highlighted: white

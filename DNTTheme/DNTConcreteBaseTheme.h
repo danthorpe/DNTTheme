@@ -21,6 +21,19 @@
 
 - (Class)classForThemeWithKey:(NSInteger)key;
 
+/**
+ * @abstract
+ * An NSString instance for the path to a plist file which
+ * contains inforation for the theme.
+ *
+ * @discussion
+ * Check the implementation of this method in each
+ * theme class for information about how this plist
+ * should be structured.
+ */
+- (NSArray *)resourcePathsForThemeWithKey:(NSInteger)key;
+
+
 - (void)loadThemeResouces:(id)resource;
 
 @end

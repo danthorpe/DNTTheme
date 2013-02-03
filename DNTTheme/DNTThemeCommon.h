@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger, DNTTextElementKeys) {
     DNTTextHeaderElementKey,
     DNTTextFooterElementKey,
     DNTTextLabelElementKey,
-    DNTSecondaryTextElementKey,
+    DNTDetailedTextLabelElementKey,
 
     DNTTextElementKeysCount
 };
@@ -27,11 +27,18 @@ typedef NS_ENUM(NSUInteger, DNTButtonElementKeys) {
     DNTButtonElementKeysCount
 };
 
+// Themes
 @protocol DNTColorStyle;
 @protocol DNTTextStyle;
 @protocol DNTButtonStyleInteface;
 
+// Importers
+@protocol DNTColorStyleImporter;
+@protocol DNTTextStyleImporter;
+
+// Themes
 @protocol DNTBaseTheme;
+@protocol DNTLoadableTheme;
 @protocol DNTComponentTheme;
 @protocol DNTMainTheme;
 @protocol DNTLabelTheme;

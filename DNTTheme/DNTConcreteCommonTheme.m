@@ -18,10 +18,41 @@
 
 @implementation DNTConcreteCommonTheme
 
-#pragma mark - Theme Classes
+#pragma mark - Resource Loading
+
+- (NSArray *)resourcePathsForThemeWithKey:(NSInteger)key {
+    NSMutableArray *resources = [NSMutableArray array];
+    switch (key) {
+
+            // Text
+        case DNTTextFooterElementKey:
+        case DNTTextHeaderElementKey:
+        case DNTTextBodyElementKey:
+            [resources addObject:@"text_theme"];
+            break;
+        case DNTTextLabelElementKey:
+            [resources addObject:@"text_theme"];
+            [resources addObject:@"text_label_theme"];
+            break;
+        case DNTDetailedTextLabelElementKey:
+            [resources addObject:@"text_theme"];
+            [resources addObject:@"detailed_text_label_theme"];
+            break;
+
+            // Buttons
+        case DNTButtonPrimaryElementKey:
+        case DNTButtonSecondaryElementKey:
+        case DNTButtonTertiaryElementKey:
+            
+        default:
+            break;
+    }
+
+    return resources;
+}
 
 - (Class)classForThemeWithKey:(NSInteger)key {
-    Class class = [super classForThemeWithKey:key];
+    Class class = nil;
     
     switch (key) {
 
@@ -33,7 +64,7 @@
             class = [DNTConcreteTextLabelTheme class];
             break;
 
-        case DNTSecondaryTextElementKey:
+        case DNTDetailedTextLabelElementKey:
             class = [DNTConcreteDetailedTextLabelTheme class];
             break;
 
@@ -57,7 +88,7 @@
 }
 
 - (id <DNTLabelTheme>)detailedTextLabelTheme {
-    return [self labelThemeForElement:DNTSecondaryTextElementKey];
+    return [self labelThemeForElement:DNTDetailedTextLabelElementKey];
 }
 
 #pragma mark - DNTMainTheme

@@ -86,7 +86,7 @@ NSString * const DNTTableViewComponent = @"DNTTableViewComponent";
     cell.detailTextLabel.text = self.words[ arc4random_uniform(self.words.count) ];
 
     // Confgiure the table view cell
-    [[[DNTThemeBrowserTheme themeForComponent:DNTTableViewComponent] textLabelTheme] applyToLabel:cell.textLabel];
+    [[DNTThemeBrowserTheme textLabelTheme] applyToLabel:cell.detailTextLabel];
     [[DNTThemeBrowserTheme detailedTextLabelTheme] applyToLabel:cell.detailTextLabel];
 }
 

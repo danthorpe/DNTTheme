@@ -9,5 +9,4 @@
 #import "DNTConcreteLabelTheme.h"
 
 @interface DNTConcreteDetailedTextLabelTheme : DNTConcreteLabelTheme
-
 @end

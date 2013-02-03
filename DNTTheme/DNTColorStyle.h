@@ -43,3 +43,14 @@
 
 
 @end
+
+
+@protocol DNTColorStyleImporter <NSObject>
+
+- (UIColor *)backgroundColorFromColorStyleProperties:(NSDictionary *)properties;
+
+- (UIColor *)foregroundColorFromColorStyleProperties:(NSDictionary *)properties;
+
+- (UIColor *)highlightedColorFromColorStyleProperties:(NSDictionary *)properties;
+
+@end

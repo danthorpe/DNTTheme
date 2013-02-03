@@ -1,0 +1,6 @@
+--- # Basic text theme
+name:  text
+styles: [text]
+text:
+    size: 17.f
+    name: system-bold

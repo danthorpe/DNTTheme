@@ -28,14 +28,4 @@
     label.highlightedTextColor = [self highlightedColor];
 }
 
-
-
-
-#pragma mark - DNTTextStyle
-
-- (CGFloat)fontSize {
-    return [UIFont labelFontSize];
-}
-
-
 @end

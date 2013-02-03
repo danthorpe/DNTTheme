@@ -9,9 +9,4 @@
 #import "DNTConcreteTextLabelTheme.h"
 
 @implementation DNTConcreteTextLabelTheme
-
-- (UIFont *)fontWithSize:(CGFloat)fontSize {
-    return [UIFont boldSystemFontOfSize:fontSize];
-}
-
 @end
