@@ -35,7 +35,7 @@
 
         // Navigation items
         case DNTNavigationBarElementKey:
-            resources = @[ @"navigation_theme" ];
+            resources = @[ @"navigation_theme~ipad" ];
             break;
 
         default:

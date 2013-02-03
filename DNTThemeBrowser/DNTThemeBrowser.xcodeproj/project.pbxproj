@@ -20,6 +20,7 @@
 		6519D66316BEBEFA00CF4E89 /* DNTConcreteNavigationBarTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6519D66216BEBEFA00CF4E89 /* DNTConcreteNavigationBarTheme.m */; };
 		6519D66716BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 6519D66616BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.m */; };
 		6519D66916BEDB6600CF4E89 /* navigation_theme.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6519D66816BEDB6500CF4E89 /* navigation_theme.yml */; };
+		6519D66B16BEE71000CF4E89 /* navigation_theme~ipad.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6519D66A16BEE71000CF4E89 /* navigation_theme~ipad.yml */; };
 		657A5AB416B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB316B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.m */; };
 		657A5AB716B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB616B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.m */; };
 		657A5ABA16B5BF33005B982A /* DNTThemeBrowserTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB916B5BF33005B982A /* DNTThemeBrowserTheme.m */; };
@@ -102,6 +103,7 @@
 		6519D66516BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteNavigationElementTheme.h; path = ../DNTTheme/DNTConcreteNavigationElementTheme.h; sourceTree = "<group>"; };
 		6519D66616BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteNavigationElementTheme.m; path = ../DNTTheme/DNTConcreteNavigationElementTheme.m; sourceTree = "<group>"; };
 		6519D66816BEDB6500CF4E89 /* navigation_theme.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = navigation_theme.yml; path = Themes/navigation_theme.yml; sourceTree = "<group>"; };
+		6519D66A16BEE71000CF4E89 /* navigation_theme~ipad.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "navigation_theme~ipad.yml"; path = "Themes/navigation_theme~ipad.yml"; sourceTree = "<group>"; };
 		657A5AB216B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTThemeBrowserDemoPhoneTheme.h; path = Classes/Themes/DNTThemeBrowserDemoPhoneTheme.h; sourceTree = "<group>"; };
 		657A5AB316B5BED5005B982A /* DNTThemeBrowserDemoPhoneTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTThemeBrowserDemoPhoneTheme.m; path = Classes/Themes/DNTThemeBrowserDemoPhoneTheme.m; sourceTree = "<group>"; };
 		657A5AB516B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTThemeBrowserDemoPadTheme.h; path = Classes/Themes/DNTThemeBrowserDemoPadTheme.h; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 		6519D65D16BEB81C00CF4E89 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				6519D66A16BEE71000CF4E89 /* navigation_theme~ipad.yml */,
 				6519D65716BEB81000CF4E89 /* text_label_theme~ipad.yml */,
 				6519D65816BEB81000CF4E89 /* detailed_text_label_theme~ipad.yml */,
 				6519D65916BEB81100CF4E89 /* text_theme~ipad.yml */,
@@ -533,6 +536,7 @@
 				6519D65B16BEB81100CF4E89 /* detailed_text_label_theme~ipad.yml in Resources */,
 				6519D65C16BEB81100CF4E89 /* text_theme~ipad.yml in Resources */,
 				6519D66916BEDB6600CF4E89 /* navigation_theme.yml in Resources */,
+				6519D66B16BEE71000CF4E89 /* navigation_theme~ipad.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,7 @@
 
 - (void)apply {
     [[UINavigationBar appearance] setTintColor:[self tintColor]];
+    [[UIToolbar appearance] setTintColor:[self tintColor]];
 }
 
 #pragma mark - Private

@@ -89,7 +89,8 @@ NSString * const DNTTableViewComponent = @"DNTTableViewComponent";
 #pragma mark - UITableViewDelegate Methods
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    DNTThemeBrowserTableViewController *vc = [[DNTThemeBrowserTableViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

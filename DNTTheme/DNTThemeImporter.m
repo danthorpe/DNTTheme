@@ -15,14 +15,36 @@ inline UIColor * UIColorFromRGB(NSInteger rgbValue) {
                             blue:((CGFloat)(rgbValue & 0xFF))/255.0 alpha:1.0];
 }
 
+@interface DNTThemeImporter ( /* Private */ )
+
+@property (nonatomic) NSCache *cache;
+
+@end
+
 @implementation DNTThemeImporter
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.cache = [[NSCache alloc] init];
+    }
+    return self;
+}
 
 - (NSArray *)themePropertiesFromResources:(NSArray *)resources {
     NSMutableArray *properties = [NSMutableArray arrayWithCapacity:resources.count];
     for ( NSString *resource in resources ) {
-        // Get the document
-        NSString *path = [[NSBundle mainBundle] pathForResource:resource ofType:@"yml"];
-        id document = [YACYAMLKeyedUnarchiver unarchiveObjectWithFile:path];
+
+        // Check to see if the resources are in the cache
+        id document = [self.cache objectForKey:resource];
+
+        // Get the YAML
+        if ( !document ) {
+            NSString *path = [[NSBundle mainBundle] pathForResource:resource ofType:@"yml"];
+            document = [YACYAMLKeyedUnarchiver unarchiveObjectWithFile:path];
+            [self.cache setObject:document forKey:resource];
+        }
+
         [properties addObject:document];
     }
     return properties;
