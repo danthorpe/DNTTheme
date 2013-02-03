@@ -72,6 +72,8 @@ NSString * const DNTTableViewComponent = @"DNTTableViewComponent";
     
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+        [[DNTThemeBrowserTheme textLabelTheme] applyToLabel:cell.textLabel];
+        [[DNTThemeBrowserTheme detailedTextLabelTheme] applyToLabel:cell.detailTextLabel];
     }
     
     // Configure the cell
@@ -84,10 +86,6 @@ NSString * const DNTTableViewComponent = @"DNTTableViewComponent";
     // Set some meaningless text
     cell.textLabel.text = self.words[ arc4random_uniform(self.words.count) ];
     cell.detailTextLabel.text = self.words[ arc4random_uniform(self.words.count) ];
-
-    // Confgiure the table view cell
-    [[DNTThemeBrowserTheme textLabelTheme] applyToLabel:cell.detailTextLabel];
-    [[DNTThemeBrowserTheme detailedTextLabelTheme] applyToLabel:cell.detailTextLabel];
 }
 
 #pragma mark - UITableViewDelegate Methods

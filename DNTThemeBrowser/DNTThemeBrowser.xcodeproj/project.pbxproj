@@ -247,7 +247,7 @@
 			name = Themes;
 			sourceTree = "<group>";
 		};
-		657A5AC216B5C845005B982A /* Labels */ = {
+		657A5AC216B5C845005B982A /* Text & Labels */ = {
 			isa = PBXGroup;
 			children = (
 				657A5ABC16B5C543005B982A /* DNTConcreteLabelTheme.h */,
@@ -255,7 +255,7 @@
 				65E588B416B350C300085A5E /* DNTConcreteTextTheme.h */,
 				65E588B516B350C300085A5E /* DNTConcreteTextTheme.m */,
 			);
-			name = Labels;
+			name = "Text & Labels";
 			sourceTree = "<group>";
 		};
 		65D0D12F16B3458000C32336 = {
@@ -363,7 +363,7 @@
 				65E588BA16B35B4100085A5E /* DNTConcreteBaseTheme.m */,
 				65D0D17916B346B800C32336 /* DNTConcreteCommonTheme.h */,
 				65D0D17A16B346B800C32336 /* DNTConcreteCommonTheme.m */,
-				657A5AC216B5C845005B982A /* Labels */,
+				657A5AC216B5C845005B982A /* Text & Labels */,
 				6519D62616BDC20100CF4E89 /* Utils */,
 			);
 			name = Classes;

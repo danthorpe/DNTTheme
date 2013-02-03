@@ -2,5 +2,5 @@
 name:  text
 styles: [text]
 text:
-    size: 17.f
-    name: system-bold
+    size: 18.f
+    name: GeezaPro-Bold
