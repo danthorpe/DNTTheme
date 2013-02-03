@@ -49,9 +49,7 @@ inline UIColor * UIColorFromRGB(NSInteger rgbValue) {
     } else if ( [propertyValue isKindOfClass:[NSString class]] ) {
         NSString *strValue = (NSString *)propertyValue;
         // Check to see if the first char is a #
-        if ( [strValue rangeOfString:@"#"].location == 0 ) {
-            color = UIColorFromRGB( [[strValue substringWithRange:NSMakeRange(1, 6)] integerValue] );
-        } else if ( [strValue isEqualToString:@"white"] ) {
+        if ( [strValue isEqualToString:@"white"] ) {
             color = [UIColor whiteColor];
         } else if ( [strValue isEqualToString:@"black"] ) {
             color = [UIColor blackColor];

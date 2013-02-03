@@ -1,6 +1,9 @@
 --- # Basic text theme
 name:  text
-styles: [text]
+styles: [text, color]
 text:
     size: 18.f
     name: GeezaPro-Bold
+color:
+    foreground: 0x14124F
+    highlighted: 0xBAC9CB
