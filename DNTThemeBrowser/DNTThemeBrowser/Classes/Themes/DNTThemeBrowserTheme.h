@@ -9,5 +9,4 @@
 #import "DNTConcreteCommonTheme.h"
 
 @interface DNTThemeBrowserTheme : DNTTheme
-
 @end

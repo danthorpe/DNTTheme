@@ -9,5 +9,4 @@
 #import "DNTThemeBrowserDemoPhoneTheme.h"
 
 @implementation DNTThemeBrowserDemoPhoneTheme
-
 @end
