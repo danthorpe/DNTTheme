@@ -1,0 +1,5 @@
+--- # Basic text theme
+name:  navigation
+styles: [navigation]
+navigation:
+    tint: 0x8DAFC4

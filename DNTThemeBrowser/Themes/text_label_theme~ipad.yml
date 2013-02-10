@@ -1,0 +1,9 @@
+--- # Basic text theme
+name:  text
+styles: [text, color]
+text:
+    size: 20.f
+    name: HelveticaNeue-Light
+color:
+    foreground: 0x14124F
+    highlighted: 0xBAC9CB
