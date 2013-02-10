@@ -35,19 +35,26 @@ inline UIColor * UIColorFromRGB(NSInteger rgbValue) {
     NSMutableArray *properties = [NSMutableArray arrayWithCapacity:resources.count];
     for ( NSString *resource in resources ) {
 
-        // Check to see if the resources are in the cache
-        id document = [self.cache objectForKey:resource];
-
-        // Get the YAML
-        if ( !document ) {
-            NSString *path = [[NSBundle mainBundle] pathForResource:resource ofType:@"yml"];
-            document = [YACYAMLKeyedUnarchiver unarchiveObjectWithFile:path];
-            [self.cache setObject:document forKey:resource];
-        }
+        // Get the document for this resource
+        id document = [self documentForResource:resource];
 
         [properties addObject:document];
     }
     return properties;
+}
+
+- (id)documentForResource:(NSString *)resource {
+
+    // Check to see if the resource is in the cache
+    id document = [self.cache objectForKey:resource];
+
+    // Get the YAML
+    if ( !document ) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:resource ofType:@"yml"];
+        document = [YACYAMLKeyedUnarchiver unarchiveObjectWithFile:path];
+        [self.cache setObject:document forKey:resource];
+    }
+    return  document;
 }
 
 #pragma mark - DNTColorStyleImporter
@@ -79,7 +86,7 @@ inline UIColor * UIColorFromRGB(NSInteger rgbValue) {
 }
 
 - (BOOL)isItalicSystemFontFromTextStyleProperties:(NSDictionary *)properties {
-    return [(NSString *)[properties objectForKey:@"name"] isEqualToString:@"system-italice"];
+    return [(NSString *)[properties objectForKey:@"name"] isEqualToString:@"system-italic"];
 }
 
 - (NSString *)fontNameFromTextStyleProperties:(NSDictionary *)properties {
@@ -100,21 +107,39 @@ inline UIColor * UIColorFromRGB(NSInteger rgbValue) {
 
 - (UIColor *)colorForPropertyValue:(id)propertyValue {
     UIColor *color = nil;
+
     if ( [propertyValue isKindOfClass:[NSNumber class]] ) {
-        color = UIColorFromRGB( [(NSNumber *)propertyValue integerValue] );
+
+        color = [self colorForNumber:(NSNumber *)propertyValue];
+
     } else if ( [propertyValue isKindOfClass:[NSString class]] ) {
-        NSString *strValue = (NSString *)propertyValue;
-        // Check to see if the first char is a #
-        if ( [strValue isEqualToString:@"white"] ) {
-            color = [UIColor whiteColor];
-        } else if ( [strValue isEqualToString:@"black"] ) {
-            color = [UIColor blackColor];
-        }
+
+        color = [self colorForString:(NSString *)propertyValue];
     }
+
     if ( propertyValue ) {
         NSAssert(color, @"color was not created from: %@", propertyValue);
     }
+
     return color;
+}
+
+- (UIColor *)colorForNumber:(NSNumber *)number {
+    return UIColorFromRGB( [number integerValue] );
+}
+
+- (UIColor *)colorForString:(NSString *)string {
+
+    if ( [string isEqualToString:@"white"] ) {
+
+        return [UIColor whiteColor];
+
+    } else if ( [string isEqualToString:@"black"] ) {
+
+        return [UIColor blackColor];
+    }
+
+    return nil;
 }
 
 @end

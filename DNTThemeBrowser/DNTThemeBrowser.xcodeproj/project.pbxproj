@@ -28,6 +28,7 @@
 		657A5AB716B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB616B5BF07005B982A /* DNTThemeBrowserDemoPadTheme.m */; };
 		657A5ABA16B5BF33005B982A /* DNTThemeBrowserTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB916B5BF33005B982A /* DNTThemeBrowserTheme.m */; };
 		657A5ABE16B5C543005B982A /* DNTConcreteLabelTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5ABD16B5C543005B982A /* DNTConcreteLabelTheme.m */; };
+		65BF65FC16C7E36700C1934F /* DNTThemeImporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BF65FB16C7E36700C1934F /* DNTThemeImporterTests.m */; };
 		65D0D13F16B3458000C32336 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D13E16B3458000C32336 /* UIKit.framework */; };
 		65D0D14116B3458000C32336 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D14016B3458000C32336 /* Foundation.framework */; };
 		65D0D14316B3458000C32336 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D14216B3458000C32336 /* CoreGraphics.framework */; };
@@ -120,6 +121,7 @@
 		657A5ABB16B5C4B2005B982A /* DNTLabelTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTLabelTheme.h; path = ../DNTTheme/DNTLabelTheme.h; sourceTree = "<group>"; };
 		657A5ABC16B5C543005B982A /* DNTConcreteLabelTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteLabelTheme.h; path = ../DNTTheme/DNTConcreteLabelTheme.h; sourceTree = "<group>"; };
 		657A5ABD16B5C543005B982A /* DNTConcreteLabelTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteLabelTheme.m; path = ../DNTTheme/DNTConcreteLabelTheme.m; sourceTree = "<group>"; };
+		65BF65FB16C7E36700C1934F /* DNTThemeImporterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTThemeImporterTests.m; path = ../DNTTheme/Tests/DNTThemeImporterTests.m; sourceTree = "<group>"; };
 		65D0D13A16B3458000C32336 /* DNTThemeBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNTThemeBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D0D13E16B3458000C32336 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65D0D14016B3458000C32336 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -238,6 +240,7 @@
 				651326F316C677170068824D /* DNTThemeTestCase.m */,
 				651326F616C677470068824D /* DNTConcreteBaseThemeTests.m */,
 				651326F916C67AA20068824D /* DNTConcreteCommonThemeTests.m */,
+				65BF65FB16C7E36700C1934F /* DNTThemeImporterTests.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				651326F416C677170068824D /* DNTThemeTestCase.m in Sources */,
 				651326F716C677470068824D /* DNTConcreteBaseThemeTests.m in Sources */,
 				651326FA16C67AA20068824D /* DNTConcreteCommonThemeTests.m in Sources */,
+				65BF65FC16C7E36700C1934F /* DNTThemeImporterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
