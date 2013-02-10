@@ -1,9 +1,0 @@
---- # Basic text theme
-name:  text
-styles: [text, color]
-text:
-    size: 16.f
-    name: Avenir-Light
-color:
-    foreground: 0xC44521
-    highlighted: 0xB2C0E8
