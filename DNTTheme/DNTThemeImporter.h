@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "DNTLoadableTheme.h"
 
-extern inline UIColor * UIColorFromRGB(NSInteger rgbValue);
+extern inline UIColor * DNTUIColorFromRGB(NSInteger rgbValue);
 
 @interface DNTThemeImporter : NSObject <DNTStyleImporter>
 
