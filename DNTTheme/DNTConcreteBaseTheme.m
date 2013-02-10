@@ -14,7 +14,7 @@
 @interface DNTConcreteBaseTheme ( /* Private */ )
 
 @property (nonatomic, readwrite) NSCache *cache;
-@property (nonatomic) DNTThemeImporter *importer;
+@property (nonatomic, readwrite) DNTThemeImporter *importer;
 
 @end
 

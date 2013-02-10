@@ -9,8 +9,12 @@
 #ifndef DNTThemeBrowser_DNTThemeCommon_h
 #define DNTThemeBrowser_DNTThemeCommon_h
 
+typedef NS_ENUM(NSUInteger, DNTThemeElementKeys) {
+    DNTThemeElementUnknownKey = 0
+};
+
 typedef NS_ENUM(NSUInteger, DNTTextElementKeys) {
-    DNTTextBodyElementKey,
+    DNTTextBodyElementKey = DNTThemeElementUnknownKey,
     DNTTextHeaderElementKey,
     DNTTextFooterElementKey,
     DNTTextLabelElementKey,

@@ -143,7 +143,13 @@
  * Consumers of this library should subclass DNTTheme and
  * override this method to return custom classes which
  * implement DNTPlatformTheme. It is strongly suggested
- * that you subclass DNTCommonTheme.
+ * that you subclass DNTConcreteCommonTheme.
+ *
+ * This is a case where the singleton pattern is preferred.
+ * The theme needs to be available everywhere, all the time
+ * and it only ever modifies the appearance of things. 
+ * It is never used to coordinate control, or send messages
+ * between objects.
  */
 + (id <DNTMainTheme>)sharedTheme {
     static id <DNTMainTheme> sharedTheme = nil;
@@ -169,12 +175,16 @@
     return [[self sharedTheme] detailedTextLabelTheme];
 }
 
++ (id <DNTNavigationBarTheme>)navigationBarTheme {
+    return [[self sharedTheme] navigationBarTheme];
+}
+
 /**
  * @abstract
  * Accesses the theme object for a given component.
  *
  * @warning
- * Throws and exception if the no theme is registered for the
+ * Throws an exception if the no theme is registered for the
  * component.
  */
 + (id <DNTComponentTheme>)themeForComponent:(const NSString *)componentName {

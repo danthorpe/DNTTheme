@@ -9,9 +9,12 @@
 #import "DNTThemeCommon.h"
 #import "DNTBaseTheme.h"
 
+@class DNTThemeImporter;
+
 @interface DNTConcreteBaseTheme : NSObject <DNTBaseTheme>
 
 @property (nonatomic, readonly) NSCache *cache;
+@property (nonatomic, readonly) DNTThemeImporter *importer;
 
 /// @abstract Theme Resources & Caches
 
