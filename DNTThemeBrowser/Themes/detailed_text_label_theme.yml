@@ -1,9 +1,0 @@
---- # Basic text theme
-name:  detailedTextLabel
-styles: [text, color]
-text:
-    size: 14.f
-    name: Avenir-Light
-color:
-    foreground: 0xCC3333
-    highlighted: 0xB2C0E8
