@@ -45,4 +45,8 @@
     return resources;
 }
 
+- (NSString *)prefixForComponent:(const NSString *)componentName {
+    return @"feature";
+}
+
 @end

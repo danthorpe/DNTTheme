@@ -70,7 +70,8 @@ NSString * const DNTTableViewComponent = @"DNTTableViewComponent";
     
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
-        [[DNTThemeBrowserTheme textLabelTheme] applyToLabel:cell.textLabel];
+        [[[DNTThemeBrowserTheme themeForComponent:DNTThemeBrowserFeatureComponent] textLabelTheme] applyToLabel:cell.textLabel];
+//        [[DNTThemeBrowserTheme textLabelTheme] applyToLabel:cell.textLabel];
         [[DNTThemeBrowserTheme detailedTextLabelTheme] applyToLabel:cell.detailTextLabel];
     }
     

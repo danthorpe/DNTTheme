@@ -29,6 +29,13 @@
 		657A5ABA16B5BF33005B982A /* DNTThemeBrowserTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5AB916B5BF33005B982A /* DNTThemeBrowserTheme.m */; };
 		657A5ABE16B5C543005B982A /* DNTConcreteLabelTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 657A5ABD16B5C543005B982A /* DNTConcreteLabelTheme.m */; };
 		65BF65FC16C7E36700C1934F /* DNTThemeImporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BF65FB16C7E36700C1934F /* DNTThemeImporterTests.m */; };
+		65BF660A16C7F4F300C1934F /* DNTConcreteTextThemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BF660916C7F4F300C1934F /* DNTConcreteTextThemeTests.m */; };
+		65BF662516C8011900C1934F /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BF662416C8011900C1934F /* libOCMock.a */; };
+		65BF662816C80B9C00C1934F /* DNTConcreteComponentTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BF662716C80B9C00C1934F /* DNTConcreteComponentTheme.m */; };
+		65BF662C16C8197B00C1934F /* feature_text_label_theme.yml in Resources */ = {isa = PBXBuildFile; fileRef = 65BF662A16C8197B00C1934F /* feature_text_label_theme.yml */; };
+		65BF662D16C8197B00C1934F /* feature_text_theme.yml in Resources */ = {isa = PBXBuildFile; fileRef = 65BF662B16C8197B00C1934F /* feature_text_theme.yml */; };
+		65BF663016C8198400C1934F /* feature_text_label_theme~ipad.yml in Resources */ = {isa = PBXBuildFile; fileRef = 65BF662E16C8198400C1934F /* feature_text_label_theme~ipad.yml */; };
+		65BF663116C8198400C1934F /* feature_text_theme~ipad.yml in Resources */ = {isa = PBXBuildFile; fileRef = 65BF662F16C8198400C1934F /* feature_text_theme~ipad.yml */; };
 		65D0D13F16B3458000C32336 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D13E16B3458000C32336 /* UIKit.framework */; };
 		65D0D14116B3458000C32336 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D14016B3458000C32336 /* Foundation.framework */; };
 		65D0D14316B3458000C32336 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D0D14216B3458000C32336 /* CoreGraphics.framework */; };
@@ -122,6 +129,15 @@
 		657A5ABC16B5C543005B982A /* DNTConcreteLabelTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteLabelTheme.h; path = ../DNTTheme/DNTConcreteLabelTheme.h; sourceTree = "<group>"; };
 		657A5ABD16B5C543005B982A /* DNTConcreteLabelTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteLabelTheme.m; path = ../DNTTheme/DNTConcreteLabelTheme.m; sourceTree = "<group>"; };
 		65BF65FB16C7E36700C1934F /* DNTThemeImporterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTThemeImporterTests.m; path = ../DNTTheme/Tests/DNTThemeImporterTests.m; sourceTree = "<group>"; };
+		65BF660916C7F4F300C1934F /* DNTConcreteTextThemeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteTextThemeTests.m; path = ../DNTTheme/Tests/DNTConcreteTextThemeTests.m; sourceTree = "<group>"; };
+		65BF662416C8011900C1934F /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Libraries/libOCMock.a; sourceTree = "<group>"; };
+		65BF662616C80B9C00C1934F /* DNTConcreteComponentTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTConcreteComponentTheme.h; path = ../DNTTheme/DNTConcreteComponentTheme.h; sourceTree = "<group>"; };
+		65BF662716C80B9C00C1934F /* DNTConcreteComponentTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTConcreteComponentTheme.m; path = ../DNTTheme/DNTConcreteComponentTheme.m; sourceTree = "<group>"; };
+		65BF662916C80F1200C1934F /* DNTThemeResources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DNTThemeResources.h; path = ../DNTTheme/DNTThemeResources.h; sourceTree = "<group>"; };
+		65BF662A16C8197B00C1934F /* feature_text_label_theme.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = feature_text_label_theme.yml; path = Themes/feature_text_label_theme.yml; sourceTree = "<group>"; };
+		65BF662B16C8197B00C1934F /* feature_text_theme.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = feature_text_theme.yml; path = Themes/feature_text_theme.yml; sourceTree = "<group>"; };
+		65BF662E16C8198400C1934F /* feature_text_label_theme~ipad.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "feature_text_label_theme~ipad.yml"; path = "Themes/feature_text_label_theme~ipad.yml"; sourceTree = "<group>"; };
+		65BF662F16C8198400C1934F /* feature_text_theme~ipad.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "feature_text_theme~ipad.yml"; path = "Themes/feature_text_theme~ipad.yml"; sourceTree = "<group>"; };
 		65D0D13A16B3458000C32336 /* DNTThemeBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNTThemeBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D0D13E16B3458000C32336 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65D0D14016B3458000C32336 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -177,6 +193,7 @@
 				65D0D15D16B3458000C32336 /* SenTestingKit.framework in Frameworks */,
 				65D0D15E16B3458000C32336 /* UIKit.framework in Frameworks */,
 				65D0D15F16B3458000C32336 /* Foundation.framework in Frameworks */,
+				65BF662516C8011900C1934F /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +220,7 @@
 				65D0D17C16B3474F00C32336 /* DNTMainTheme.h */,
 				657A5ABB16B5C4B2005B982A /* DNTLabelTheme.h */,
 				6519D66016BEBBAC00CF4E89 /* DNTNavigationBarTheme.h */,
+				65BF662916C80F1200C1934F /* DNTThemeResources.h */,
 			);
 			name = Themes;
 			sourceTree = "<group>";
@@ -241,6 +259,7 @@
 				651326F616C677470068824D /* DNTConcreteBaseThemeTests.m */,
 				651326F916C67AA20068824D /* DNTConcreteCommonThemeTests.m */,
 				65BF65FB16C7E36700C1934F /* DNTThemeImporterTests.m */,
+				65BF660916C7F4F300C1934F /* DNTConcreteTextThemeTests.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -277,6 +296,8 @@
 		6519D65D16BEB81C00CF4E89 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				65BF662E16C8198400C1934F /* feature_text_label_theme~ipad.yml */,
+				65BF662F16C8198400C1934F /* feature_text_theme~ipad.yml */,
 				6519D66A16BEE71000CF4E89 /* navigation_theme~ipad.yml */,
 				6519D65716BEB81000CF4E89 /* text_label_theme~ipad.yml */,
 				6519D65816BEB81000CF4E89 /* detailed_text_label_theme~ipad.yml */,
@@ -288,6 +309,8 @@
 		6519D65E16BEB82800CF4E89 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				65BF662A16C8197B00C1934F /* feature_text_label_theme.yml */,
+				65BF662B16C8197B00C1934F /* feature_text_theme.yml */,
 				6519D66816BEDB6500CF4E89 /* navigation_theme.yml */,
 				6519D65316BEA4E700CF4E89 /* detailed_text_label_theme.yml */,
 				6519D65416BEA4E700CF4E89 /* text_label_theme.yml */,
@@ -331,6 +354,14 @@
 			name = "Text & Labels";
 			sourceTree = "<group>";
 		};
+		65BF662116C8000900C1934F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				65BF662416C8011900C1934F /* libOCMock.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 		65D0D12F16B3458000C32336 = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +370,7 @@
 				65D0D14416B3458000C32336 /* DNTThemeBrowser */,
 				65D0D16216B3458000C32336 /* DNTThemeBrowserTests */,
 				65D0D13D16B3458000C32336 /* Frameworks */,
+				65BF662116C8000900C1934F /* Libraries */,
 				65D0D13B16B3458000C32336 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -437,6 +469,8 @@
 				65E588BA16B35B4100085A5E /* DNTConcreteBaseTheme.m */,
 				65D0D17916B346B800C32336 /* DNTConcreteCommonTheme.h */,
 				65D0D17A16B346B800C32336 /* DNTConcreteCommonTheme.m */,
+				65BF662616C80B9C00C1934F /* DNTConcreteComponentTheme.h */,
+				65BF662716C80B9C00C1934F /* DNTConcreteComponentTheme.m */,
 				657A5AC216B5C845005B982A /* Text & Labels */,
 				6519D66416BEBEFF00CF4E89 /* Navigation Elements */,
 				6519D62616BDC20100CF4E89 /* Utils */,
@@ -559,6 +593,10 @@
 				6519D65C16BEB81100CF4E89 /* text_theme~ipad.yml in Resources */,
 				6519D66916BEDB6600CF4E89 /* navigation_theme.yml in Resources */,
 				6519D66B16BEE71000CF4E89 /* navigation_theme~ipad.yml in Resources */,
+				65BF662C16C8197B00C1934F /* feature_text_label_theme.yml in Resources */,
+				65BF662D16C8197B00C1934F /* feature_text_theme.yml in Resources */,
+				65BF663016C8198400C1934F /* feature_text_label_theme~ipad.yml in Resources */,
+				65BF663116C8198400C1934F /* feature_text_theme~ipad.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +644,7 @@
 				6519D62516BDC1FA00CF4E89 /* DNTThemeImporter.m in Sources */,
 				6519D66316BEBEFA00CF4E89 /* DNTConcreteNavigationBarTheme.m in Sources */,
 				6519D66716BEBF3400CF4E89 /* DNTConcreteNavigationElementTheme.m in Sources */,
+				65BF662816C80B9C00C1934F /* DNTConcreteComponentTheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +657,7 @@
 				651326F716C677470068824D /* DNTConcreteBaseThemeTests.m in Sources */,
 				651326FA16C67AA20068824D /* DNTConcreteCommonThemeTests.m in Sources */,
 				65BF65FC16C7E36700C1934F /* DNTThemeImporterTests.m in Sources */,
+				65BF660A16C7F4F300C1934F /* DNTConcreteTextThemeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,7 +795,17 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DNTThemeBrowser/DNTThemeBrowser-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/Headers";
 				INFOPLIST_FILE = "DNTThemeBrowserTests/DNTThemeBrowserTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Libraries/libOCMock.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -772,7 +822,17 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DNTThemeBrowser/DNTThemeBrowser-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/Headers";
 				INFOPLIST_FILE = "DNTThemeBrowserTests/DNTThemeBrowserTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Libraries/libOCMock.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

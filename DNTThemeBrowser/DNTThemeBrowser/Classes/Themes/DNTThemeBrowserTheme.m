@@ -10,6 +10,8 @@
 #import "DNTThemeBrowserDemoPadTheme.h"
 #import "DNTThemeBrowserDemoPhoneTheme.h"
 
+NSString * const DNTThemeBrowserFeatureComponent = @"DNTThemeBrowserFeatureComponent";
+
 @implementation DNTThemeBrowserTheme
 
 + (id <DNTMainTheme>)sharedTheme {

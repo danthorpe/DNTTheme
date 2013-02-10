@@ -8,8 +8,9 @@
 
 #import "DNTThemeCommon.h"
 #import "DNTBaseTheme.h"
+#import "DNTThemeResources.h"
 
-@protocol DNTComponentTheme <DNTBaseTheme>
+@protocol DNTComponentTheme <DNTBaseTheme, DNTThemeResources>
 
 /// @abstract Theme object for a table cell text label
 - (id <DNTLabelTheme>)textLabelTheme;

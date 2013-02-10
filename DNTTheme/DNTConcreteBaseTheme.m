@@ -69,6 +69,11 @@
     return nil;
 }
 
+- (NSString *)prefixForComponent:(const NSString *)componentName {
+    [NSException raise:NSInternalInconsistencyException format:@"You must implement %@ in your custom subclass: %@", NSStringFromSelector(_cmd), NSStringFromClass([self class])];
+    return nil;
+}
+
 - (void)loadThemeResouces:(id)resource {
     // no-op, but don't throw an exception.
 }

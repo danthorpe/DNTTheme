@@ -8,5 +8,8 @@
 
 #import "DNTConcreteCommonTheme.h"
 
+// Theme Components
+extern NSString * const DNTThemeBrowserFeatureComponent;
+
 @interface DNTThemeBrowserTheme : DNTTheme
 @end

@@ -9,6 +9,7 @@
 #import "DNTConcreteCommonTheme.h"
 
 // Concrete classes
+#import "DNTConcreteComponentTheme.h"
 #import "DNTConcreteLabelTheme.h"
 #import "DNTConcreteNavigationBarTheme.h"
 
@@ -115,13 +116,30 @@
 }
 
 - (id <DNTComponentTheme>)themeForComponent:(const NSString *)componentName {
+
+    // Get the component theme out of the cache
     id <DNTComponentTheme> theme = [self.cache objectForKey:componentName];
+
+    if (!theme) {
+        theme = [self loadThemeForComponent:componentName];
+    }
+
     NSAssert(theme, @"No theme is registered for component with name: %@", componentName);
     return theme;
 }
 
 - (id <DNTComponentTheme>)loadThemeForComponent:(const NSString *)componentName {
-    
+
+    // Get the prefix for this component
+    NSString *prefix = [self prefixForComponent:componentName];
+
+    // Create the component theme
+    id <DNTComponentTheme> theme = [[DNTConcreteComponentTheme alloc] initWithMainTheme:self prefix:prefix];
+
+    // Store it in the cache
+    [self.cache setObject:theme forKey:componentName];
+
+    return theme;
 }
 
 @end
